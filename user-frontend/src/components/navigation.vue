@@ -25,3 +25,8 @@
   </div>
 </nav>
 </template>
+<style scoped>
+.navbar{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;
+}
+</style>
