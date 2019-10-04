@@ -11,8 +11,8 @@
     </button> -->
   <div class="manufac">
       <button class="manufacturer" v-on:click="toggle = !toggle">Manufacturer
-          <a v-if="!toggle"><i class="fas fa-caret-down fa-sm"></i></a>
-          <a v-if="toggle"><i class="fas fa-caret-up fa-sm"></i></a>
+          <a v-if="!toggle"><i class="fas fa-angle-down fa-sm"></i></a>
+          <a v-if="toggle"><i class="fas fa-angle-up fa-sm"></i></a>
         </button>
         <div class="panel" v-if="toggle">
         <a href="suzuki">Suzuki</a>
@@ -22,11 +22,11 @@
         </div>
     </div>
     <div class="bikecc">
-        <button class="cc" v-on:click="toggle = !toggle">CC
-          <a v-if="!toggle"><i class="fas fa-caret-down"></i></a>
-          <a v-if="toggle"><i class="fas fa-caret-up"></i></a>
+        <button class="cc" v-on:click="toggle1 = !toggle1">CC
+          <a v-if="!toggle1"><i class="fas fa-angle-down"></i></a>
+          <a v-if="toggle1"><i class="fas fa-angle-up"></i></a>
         </button>
-        <div class="panel" v-if="toggle">
+        <div class="panel" v-if="toggle1">
         <a href="100cc">From 100cc</a>
         <a href="200cc">101cc-200cc</a>
         <a href="300cc">201cc-300cc</a>
@@ -34,11 +34,11 @@
         </div>
   </div>
   <div class="variants">
-        <button class="type" v-on:click="toggle = !toggle">Type
-          <a v-if="!toggle"><i class="fas fa-caret-down"></i></a>
-          <a v-if="toggle"><i class="fas fa-caret-up"></i></a>
+        <button class="type" v-on:click="toggle2 = !toggle2">Type
+          <a v-if="!toggle2"><i class="fas fa-angle-down"></i></a>
+          <a v-if="toggle2"><i class="fas fa-angle-up"></i></a>
         </button>
-        <div class="panel" v-if="toggle">
+        <div class="panel" v-if="toggle2">
         <a href="petrol">Petrol</a>
         <a href="diesel">Diesel</a>
         <a href="electric">Electric</a>
@@ -76,9 +76,9 @@
                 
                 <img class="card-img-top" src="https://stat.overdrive.in/wp-content/odgallery/2018/06/43177__ANI8066.JPG" alt="Card image cap">
                 <div class="card-body">
-                    <h4 class="bike-name">Yamaha R15</h4>
-                    <p class="bike-model">Model--2018</p>
-                    <p class="bike-price">Price--80000</p>
+                    <h4 class="bike-name">Yamaha R-15</h4>
+                    <p class="bike-model">Model: 2018</p>
+                    <p class="bike-price">Rs. 80000</p>
                 </div>
             </div>
             <div class="card mb-4">
@@ -87,8 +87,8 @@
       		<img class="card-img-top " src="https://bd.gaadicdn.com/processedimages/yamaha/mt-15/source/m_mt-15_11560414504.jpg?tr=w-439,e-sharpen" alt="Card image cap">    
                 <div class="card-body">
                     <h4 class="bike-name">Yamaha MT-15</h4>
-                    <p class="bike-model">Model--2019</p>
-                    <p class="bike-price">Price--95000</p>
+                    <p class="bike-model">Model: 2019</p>
+                    <p class="bike-price">Rs. 95000</p>
                 </div>
             </div>
             <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
@@ -96,8 +96,8 @@
                 <img class="card-img-top " src="https://i.ebayimg.com/images/g/v5oAAOSwDQtcl3zn/s-l800.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="bike-name">Honda CBR-250R Repsol</h4>
-                    <p class="bike-model">Model--2017</p>
-                    <p class="bike-price">Price--90000</p>
+                    <p class="bike-model">Model: 2017</p>
+                    <p class="bike-price">Rs. 90000</p>
                 </div>
             </div>
             <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
@@ -105,8 +105,8 @@
                 <img class="card-img-top " src="https://bd.gaadicdn.com/processedimages/ktm/ktm-duke-390/source/m_duke-390_11539346124.jpg?tr=w-439,e-sharpen" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="bike-name">Duke 390 ABS</h4>
-                    <p class="bike-model">Model--2018</p>
-                    <p class="bike-price">Price--150000</p>
+                    <p class="bike-model">Model: 2019</p>
+                    <p class="bike-price">Rs.150000</p>
                 </div>
             </div>
         </div>
@@ -123,7 +123,9 @@ export default {
     // },
     data(){
         return {
-            toggle:false
+            toggle:false,
+            toggle1:false,
+            toggle2:false
         }
     },
     methods:{
@@ -143,11 +145,26 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 body {
      background: #eee;
 }
 .breadcrumb{
     background-color: whitesmoke !important;
+}
+.card-body{
+    padding: 5px 0px 0px 0px;
+    line-height: 0;
+
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
 }
 .container{ 
     margin-top: 5px ; 
@@ -237,7 +254,7 @@ body {
   .sidenav a {font-size: 18px;}
 }
 .manufacturer  {
-  background-color: rgb(190, 190, 190);
+  background-color: white;
   /* color: #444; */
   cursor: pointer;
   /* padding: 10px 10px 10px 10px; */

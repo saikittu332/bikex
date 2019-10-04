@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home mt-3">
    <div id="demo" class="carousel slide" data-ride="carousel">
   <ul class="carousel-indicators">
     <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -25,17 +25,27 @@
   </a>
 </div>
 <defaultcomponent></defaultcomponent>
+<premium></premium>
+<featured></featured>
 </div>
 </template>
 
 <script>
+import premium from './premium';
+import featured from './featured';
 export default {
-  name: 'home'
-}
+  name: 'home',
+
+components: {
+    premium,
+    featured
+  }
+  }
 </script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
 .carousel-caption{
   font-family: 'Josefin Sans', sans-serif;
   
@@ -43,5 +53,10 @@ export default {
 .carousel-caption a{
   color: whitesmoke;
     text-decoration: none;
+}
+.home{
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,.1)
 }
 </style>
