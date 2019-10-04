@@ -60,7 +60,7 @@
                 <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
                     <i class='fas fa-sort' style='font-size:16px;color:red'></i> Sort By</button>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Price: low to high</a>
+                    <a class="dropdown-item" href="#">Premium First</a>
                     <a class="dropdown-item" href="#">Price: high to low</a>
                     <a class="dropdown-item" href="#">Model: old to new</a>
                     <a class="dropdown-item" href="#">Model: new to old</a>
