@@ -13,20 +13,18 @@
               </div>
             </div>
             <div class="abc col-md-4">
-              <h3>Contacts</h3>
-
-               
+              <h3>Contacts</h3>      
               <p class="address"><span>Address: </span><a class="map-responsive" href="https://goo.gl/maps/eJKcARiWnqRXDc5u5">hal 2nd stage, bengaluru</a></p>
               <div class="sai"><p class="email"><span>Email: </span><a href="mailto:bikex@gmail.com">bikex@gmail.com</a></p></div>
               <p class="phones"><span>Phones: </span><span class="phone">(080) 9999-9999</span></p>
 
             </div>
             <div class="col-md-4 col-xl-3">
-              <h5>Links</h5>
+              <h3>Company</h3>
               <ul class="nav-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">premium bikes</a></li>            
-                <li><a href="#">Contacts</a></li>            
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Privacy Policy</a></li>            
+                <li><a href="#">Careers</a></li>            
               </ul>
             </div>
           </div>
@@ -81,8 +79,9 @@ font-weight: bold;
 }
 
 .nav-list li {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+        margin-bottom: 1rem;
 
 }
 ul, ol {
