@@ -17,18 +17,18 @@
     <li class="nav-item">
        <a class=""><router-link to="/" exact-active-class="active">HOME</router-link></a>
       </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
        <a class=""><router-link to="/bikes" exact-active-class="active">BIKES</router-link></a>
-      </li>
+      </li> -->
        <li class="nav-item">
-        <a class=""><router-link to="/about" exact-active-class="active">ABOUT</router-link></a>
+        <a class=""><router-link to="/about" exact-active-class="active">OUR STORY</router-link></a>
       </li>
       <li class="nav-item">
-       <a class=""><router-link to="/terms" exact-active-class="active">CONTACT</router-link></a>
+       <a class=""><router-link to="/contact" exact-active-class="active">EXPERIENCE CENTER</router-link></a>
       </li>
-      <li class="nav-item">
-      <a class=""><router-link to="/contact" exact-active-class="active">HELP</router-link></a>
-      </li>
+      <!-- <li class="nav-item">
+      <a class=""><router-link to="/story" exact-active-class="active">OUR STORY?</router-link></a>
+      </li> -->
 </ul>
   </div>
 </nav>
@@ -36,24 +36,19 @@
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Coda:800&display=swap');
-.navbar{
-  background-color: #fff;
-    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.1);
-    -moz-box-shadow: 0 2px 5px rgba(0,0,0,.1);
-    box-shadow: 0 2px 5px rgba(0,0,0,.1);
-    font-family: 'Ubuntu', sans-serif;
-    padding: 10px 5px 10px 5px !important;
-}
+
 .navbar-brand{
   font-size: 2.25rem;
   font-family: 'Coda', cursive;
-
+font-weight: bold;
 }
 .navbar-brand a {
     color: black;
     text-decoration: none;
     background-color: transparent;
     padding-left: 5px;
+    font-family: 'Coda', cursive;
+
 }
 .red{
   color: #EA2027

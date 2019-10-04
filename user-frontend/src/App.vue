@@ -1,14 +1,15 @@
 <template>
   <div id="app">
     <navigation></navigation>
-     <router-view></router-view>
+     <div class="content">
+       <router-view></router-view>
+     </div>
      <appFooter></appFooter>
   </div>
 </template>
 
 <script>
-// import home from './components/home.vue';
-import bikes from './components/bikes.vue';
+
 import appFooter from './components/footer.vue';
 import navigation from './components/navigation.vue';
 
@@ -16,9 +17,8 @@ export default {
   name: 'app',
   components: {
     navigation,
-    appFooter,
-    //  home
-    bikes
+    appFooter
+ 
   }
 }
 </script>
@@ -28,5 +28,8 @@ export default {
 
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   text-align: center;    
+}
+.content{
+  margin-top: 100px;
 }
 </style>

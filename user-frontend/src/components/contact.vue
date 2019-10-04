@@ -57,6 +57,10 @@
 
 <script>
 // import VueSweetalert2 from 'vue-sweetalert2';
+export default {
+  name: 'contact',
+
+}
 </script>
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');

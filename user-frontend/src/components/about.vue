@@ -1,5 +1,5 @@
 <template>
-<div class="container-fluid">
+<div class="container-fluid mb-4">
  <h2> REACH OUT TO US </h2>
  <div class="contact-items">
    <div class="contact-item"> 

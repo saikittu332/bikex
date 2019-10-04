@@ -154,7 +154,7 @@ body {
 }
 .card-body{
     padding: 5px 0px 0px 0px;
-    line-height: 0;
+    line-height: 6px;
 
 }
 h4 {

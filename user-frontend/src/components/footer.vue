@@ -1,6 +1,6 @@
 <template>
 <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
-        <div class="container">
+        <div class="container mt-4 mb-4">
           <div class="row row-30">
             <div class="col-md-4 col-xl-5">
               <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
@@ -54,6 +54,10 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+.container{
+  padding: 40px 20px 20px 20px
+}
 .context-dark, .bg-gray-dark, .bg-primary {
     color: rgba(255, 255, 255, 0.8);
 }
@@ -63,6 +67,7 @@ export default {
 .nav-list li {
     padding-top: 5px;
     padding-bottom: 5px;
+
 }
 .nav-list li a:hover:before {
     margin-left: 0;
@@ -99,4 +104,9 @@ ul, ol {
     visibility: hidden;
     transition: .22s ease;
 }
+.nav-list ul li a{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
 </style>
