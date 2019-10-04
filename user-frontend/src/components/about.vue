@@ -4,7 +4,7 @@
  <div class="contact-items">
    <div class="contact-item"> 
         <a href="https://vroom.zendesk.com/hc/en-us" name="LinkComponent">
-            <i class=" icon fas fa-question"></i><a class="info" href="visit">Visit Our Experienced Center</a>
+            <i class=" icon fas fa-question"></i><a class="info" href="visit">Visit Our Experience Center</a>
         </a>
     </div>
     <div class="vl"></div>
