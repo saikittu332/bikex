@@ -1,30 +1,49 @@
 <template>
-<footer class="section footer-classic context-dark bg-image" style="background: #000000;">
-        <div class="container mt-4 mb-4">
-          <div class="row row-30">
-            <div class="col-md-4 col-xl-5">
-               <div class="first pr-xl-4">
+<footer class="section footer-classic context-dark pl-auto pr-auto col-md-12" style="background: #000000;">
+        <div class="container footer pt-4">
+          <div class="row">
+            <div class="col-md-3 pl-0 text-left ">
                 <a href="" class="navbar-brand" routerLink="/">BIKE<span class="red">X</span></a>
-                <p><a href="/facebook">   <i class="fb fab fa-facebook fa-2x"></i> </a>
-                <a href="/instagram"> <i class="insta fab fa-instagram fa-2x"></i></a>
-                <a href="/twitter">  <i class="tweet fab fa-twitter fa-2x"></i></a></p>
-                <p class="rights"><span>©  </span><span class="copyright-year">2019</span><span> BikeX</span><span>. </span><span>All Rights Reserved.</span></p>
-              </div>
+               <div class="social">
+                  <p class="social"><a href="/facebook">   <i class="fb fa fa-facebook fa-2x"></i> </a>
+                <a href="/instagram"> <i class="insta fa fa-instagram fa-2x"></i></a>
+                <a href="/twitter">  <i class="tweet fa fa-twitter fa-2x"></i></a></p>
+               </div>  
+               <div class="batch">
+                  <p class="rights"><span>©  </span><span class="copyright-year">2019</span>
+                  <span> BikeX</span><span>. </span><span>All Rights Reserved.</span></p>
+                </div>
             </div>
-            <div class="abc col-md-4">
-              <h3>Contacts</h3>      
-              <p class="address"><span>Address: </span><a class="map-responsive" href="https://goo.gl/maps/eJKcARiWnqRXDc5u5">hal 2nd stage, bengaluru</a></p>
-              <div class="email"><p class="email"><span>Email: </span><a href="mailto:bikex@gmail.com">bikex@gmail.com</a></p></div>
-              <p class="phones"><span>Phones: </span><span class="phone">(080) 9999-9999</span></p>
+            <div class="col-md-3 pl-0 col-xl-3 text-left contentss">
+             <h3 class="menu">CONTACTS</h3> 
+              <ul class="nav-list">
+                <li><span>Email: </span><a href="mailto:bikex@gmail.com">bikex@gmail.com</a></li>            
+                <li><span>Phones: </span><span class="phone" href="(080) 9999-9999">(080) 9999-9999</span></li> 
+                <li><span>Address: </span>
+                <a class="map-responsive" href="https://goo.gl/maps/eJKcARiWnqRXDc5u5">hal 2nd stage,sdsdsdbengaluru</a>
+                </li>           
+              </ul>
             </div>
-            <div class="col-md-4 col-xl-3">
-              <h3>Company</h3>
+
+            <div class="col-md-3 pl-0 col-xl-3 text-left contentss">
+              <h3 class="menu">COMPANY</h3>
               <ul class="nav-list">
                 <li><a href="#">Our Story</a></li>
                 <li><a href="#">Privacy Policy</a></li>            
                 <li><a href="#">Careers</a></li>            
               </ul>
             </div>
+
+            <div class="col-md-3 col-xl-3 text-left contentss">
+              <h3 class="menu">LOCATE US</h3>
+              <ul class="nav-list">
+                <li> <div class="google-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24259.2011026722!2d77.62487102130073!3d12.982895604377044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a77f100f77%3A0xc5ec8c9958653929!2sOntrack%20-%20Bike%20Rental%20in%20Bangalore!5e0!3m2!1sen!2sin!4v1570217531689!5m2!1sen!2sin"  width="100%" height="200px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div></li>
+                           
+              </ul>
+            </div>
+
           </div>
         </div>
       </footer>
@@ -39,48 +58,55 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-.container{
-  padding: 40px 20px 20px 20px;
-  /* padding: 40px 0px 20px 0px; */
-  
-}
-.context-dark, .bg-black-dark .bg-primary{
-    color: rgba(255, 255, 255, 0.8);
+.footer{
+  min-height: 250px;
+  padding: 1;
 }
 .navbar-brand{
   font-size: 1.5rem;
   font-family: 'Coda', cursive;
+  font-weight: bold;
+}
+/* .batch {
+    margin-top: 84px;
+} */
+.menu{
+font-size: 15px;
 font-weight: bold;
-margin-left: -150px;
+color: rgb(153, 157, 163);
+  font-family: 'Montserrat', sans-serif;
+
 }
-.navbar-brand a {
-    color: black;
-    text-decoration: none;
-    background-color: transparent;
-    padding-left: 5px;
-    font-family: 'Coda', cursive;
-    /* margin-left: -100px; */
+.sub-menu p{
+  font-size: 5px;
+    font-family: 'Montserrat', sans-serif;
+
 }
-.rights {
-  margin-left: 10px;
+.social a{
+  padding-right: 10px;
+  font-size: 10px;
+}
+.contentss ul{
+  line-height: 40px;
+  list-style: none;
+ padding: 0px;
+ margin: 0px;
+   font-family: 'Montserrat', sans-serif;
+
+}
+.context-dark, .bg-black-dark .bg-primary{
+    color: rgba(255, 255, 255, 0.8);
 }
 
-/* .fb .insta .tweet{
-  margin-left: 10px;
-} */
  ul li a:hover {
     color: rgb(175, 42, 42);
 }
+.batch p{
+  font-size: 12px;
+     font-family: 'Montserrat', sans-serif;
 
-.abc a:hover{
-  color: rgb(175, 42, 42);
 }
 
-.abc a:hover{
-  color: rgb(175, 42, 42);
-}
-
-/*onhover social icons */
 .fb:hover{
 color: #3B5998
 } 
@@ -94,7 +120,6 @@ color: #3f729b
 color: #1da1f2
 }
 
-
 .red{
   color: #EA2027
 }
@@ -103,60 +128,13 @@ color: #1da1f2
     color: #ffffff;
 }
 
-
-
-
-.nav-list li {
-    /* padding-top: 5px;
-    padding-bottom: 5px; */
-        margin-bottom: 1rem;
-
+@media only screen and (max-width: 600px) {
+  .container{
+    text-align: center
+  }
+.row{
+  text-align: center
+}
 }
 
-@media (min-width: 1200px){
-.pr-xl-4, .px-xl-4 {
-  margin-left: -300px;
-    /* padding-right: -2.5rem!important; */
-    
-}}
-ul, ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.nav-list li a:before {
-    content: "\f14f";
-    font: 400 21px/1 "Material Design Icons";
-    color: #4d6de6;
-    display: inline-block;
-    vertical-align: baseline;
-    margin-left: -28px;
-    margin-right: 7px;
-    opacity: 0;
-    visibility: hidden;
-    transition: .22s ease;
-}
-.nav-list ul li a{
-    font-family: 'Montserrat', sans-serif;
-}
-.fab{  
-  padding-right: 50px;
-}
-.fa-facebook:before {
-    content: "\f09a";
-    margin-left: 50px;
-}
-
-.map-responsive{
-    overflow:hidden;
-    position:relative;
-    height:0;
-}
-.map-responsive a{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
 </style>

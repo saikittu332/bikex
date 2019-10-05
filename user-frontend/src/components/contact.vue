@@ -4,9 +4,7 @@
         <div class="row">
             <div class="map col-md-6">
                
-                <div class="google-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24259.2011026722!2d77.62487102130073!3d12.982895604377044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a77f100f77%3A0xc5ec8c9958653929!2sOntrack%20-%20Bike%20Rental%20in%20Bangalore!5e0!3m2!1sen!2sin!4v1570217531689!5m2!1sen!2sin"  width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
+               
             </div>
             <div class="col-md-6 yeah" >
                 <div>

@@ -47,7 +47,6 @@ font-weight: bold;
     text-decoration: none;
     background-color: transparent;
     padding-left: 5px;
-    font-family: 'Coda', cursive;
 
 }
 .red{
@@ -84,18 +83,15 @@ input.form-control{
   text-decoration: none;
   background-color: transparent;
   color: black;
-  font-weight: bold;
   font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    line-height: 14px;
-    letter-spacing: 1.25px
 }
 .navbar ul li{
-padding: 8px
+padding: 5px
 }
 .active{
   border-bottom: 2px solid #EA2027;
-  padding-bottom: 7px
+  padding-bottom: 5px
 }
 input.form-control{
   box-sizing: content-box;
@@ -106,13 +102,17 @@ input.form-control{
     margin-left: -9px;
     margin-right: 20px;
     outline: 0;
+    font-size: 12px;
     width: 500px;
+      font-family: 'Montserrat', sans-serif;
     box-shadow: none;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-.navbar s{
-  margin-right:20px;
+.navbar{
+  box-shadow: 0 3px 7px 0 #e9e9e9;
+
 }
+
 input.form-control:focus {
     border-bottom: 1px solid #EA2027;
     box-shadow: 0 1px 0 0 #EA2027;
