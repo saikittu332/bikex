@@ -14,21 +14,17 @@
     </form>
     </ul>
     <ul class="navbar-nav mt-auto mr-3">
-    <li class="nav-item">
-       <a class=""><router-link to="/" exact-active-class="active">HOME</router-link></a>
+    
+       <li class="nav-item mr-3">
+        <a class="story"><router-link to="/about" exact-active-class="active">OUR STORY</router-link></a>
       </li>
-        <!-- <li class="nav-item">
-       <a class=""><router-link to="/bikes" exact-active-class="active">BIKES</router-link></a>
-      </li> -->
-       <li class="nav-item">
-        <a class=""><router-link to="/about" exact-active-class="active">OUR STORY</router-link></a>
+      <li class="nav-item mr-3">
+       <a class="models"><router-link to="/" exact-active-class="active">MODELS</router-link></a>
       </li>
       <li class="nav-item">
-       <a class=""><router-link to="/contact" exact-active-class="active">EXPERIENCE CENTER</router-link></a>
+       <a class="faq"><router-link to="/contact" exact-active-class="active">FAQ'S</router-link></a>
       </li>
-      <!-- <li class="nav-item">
-      <a class=""><router-link to="/story" exact-active-class="active">OUR STORY?</router-link></a>
-      </li> -->
+
 </ul>
   </div>
 </nav>
@@ -36,6 +32,10 @@
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Coda:800&display=swap');
+
+.story{
+  word-spacing: 2px;
+}
 
 .navbar-brand{
   font-size: 2.25rem;

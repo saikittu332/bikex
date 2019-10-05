@@ -1,18 +1,50 @@
 <template>
-<div class="story">
-<div class="article">
-    <div class="image-aboutus-banner"  >
-   <div class="container">
-      <div class="row">
-          <div class="col-md-12">
-            <h1 class="lg-text">Our Story</h1>
-            <p class="image-aboutus-para">Selling the used bikes</p>
-          </div>
-      </div>
-   </div>
-</div>
-</div>
-<div class="container-fluid mb-4">
+<div class="about">
+<section class="section about position-relative">
+	<div class="container">
+		<div class="row ">
+			<div class="col-lg-6 col-md-6">
+				<div class="about-item pr-3 mb-5 mb-lg-0">
+					<span class="h6 text-color">What we are</span>
+					<h2 class="mt-3 mb-4 position-relative content-title">We are dynamic team of creative people</h2>
+					<p class="mb-5">llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti voluptas distinctio .</p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6">
+				<div class="about-item-img">
+					<img src="https://freepngimg.com/thumb/team/11-2-team-picture.png" alt="" height="200px">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="about-info section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="about-info-item mb-4 mb-lg-0">
+					<h3 class="mb-3"><span class="text-color mr-2 text-md ">01.</span>Our Mission</h3>
+					<p>llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti voluptas distinctio .</p>
+				</div>		
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="about-info-item mb-4 mb-lg-0">
+					<h3 class="mb-3"><span class="text-color mr-2 text-md">02.</span>Vission</h3>
+					<p>llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti voluptas distinctio .</p>
+				</div>		
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="about-info-item mb-4 mb-lg-0">
+					<h3 class="mb-3"><span class="text-color mr-2 text-md">03.</span>Our Approach</h3>
+					<p>llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti voluptas distinctio .</p>
+				</div>		
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="container-fluid">
  <h2> REACH OUT TO US </h2>
  <div class="contact-items">
    <div class="contact-item"> 
@@ -28,7 +60,7 @@
  </div>
  <div class="vl"></div>
    <div class="contact-item" href="#">
-      <i class="icon fas fa-phone-volume"></i><a class="info" href="tel:(+91) 9876-543210">(+91) 9876-543210</a>
+      <i class="icon fas fa-phone-volume"></i><a class="info" href="tel:(080) 9999-9999">(080) 9999-9999</a>
    </div>
   </div>
 </div>
@@ -45,6 +77,10 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Coda&display=swap');
+
+body{
+      text-align: left;
+}
 .container-fluid{
   background-color: rgb(238, 238, 238);
   border-radius: 0.3em;
@@ -86,44 +122,57 @@ padding-top: 25px;
     height: 35px;
 }
 
-/* @media screen and (max-height: 750px) {
-  .contact-items{
-    font-size: 10px; 
-    display: flex;
-flex-direction: row;
-padding-top: 25px;
-  }
-} */
- .image-aboutus-banner {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), 
-    url("https://images.pexels.com/photos/556962/pexels-photo-556962.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position:  */
-    background-position: center center;
-    color: #fff;
-    padding-top: 110px;
-    padding-bottom:110px;
-    /* height: auto; */
- }
- 
-  /* .image-aboutus-sm-banner {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://images.pexels.com/photos/631008/pexels-photo-631008.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
-    padding-top: 30px;
-    padding-bottom:30px;
- } */
-.lg-text {
-    font-size:50px;
-    font-weight: 600;
-    text-transform: none;
-    color:#fff;
-}
-.image-aboutus-para {
-    color:rgb(255, 255, 255);
+.section {
+  padding: 50px 0;
 }
 
+.section-sm {
+  padding: 70px 0;
+}
+
+.section-title {
+  margin-bottom: 70px;
+}
+
+.section-title .title {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.section-title p {
+  color: #666;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-content {
+  padding: 20px 0px 0px 80px;
+}
+
+.about-content h4 {
+  font-weight: 600;
+}
+
+.about-content h4:before {
+  position: absolute;
+  content: "\f576";
+  font-family: "Font Awesome 5 Free";
+  font-size: 30px;
+  position: absolute;
+  top: 8px;
+  left: -65px;
+  font-weight: 700;
+}
+.text-color {
+    color: #f75757;
+}
+.h6{
+
+    font-weight: 600;
+}
+.caption{
+font-family: Calibre-Semibold;
+    letter-spacing: 1.3px;
+    color: rgb(4, 16, 34);
+    text-transform: uppercase;
+    }
 </style>
