@@ -3,21 +3,19 @@
         <div class="container mt-4 mb-4">
           <div class="row row-30">
             <div class="col-md-4 col-xl-5">
-               <div class="pr-xl-4"><!--<a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a> -->
-                <!-- <p>about company</p> -->
-                <a class="navbar-brand" routerLink="/">BIKE<span class="red">X</span></a>
+               <div class="first pr-xl-4">
+                <a href="" class="navbar-brand" routerLink="/">BIKE<span class="red">X</span></a>
+                <p><a href="/facebook">   <i class="fb fab fa-facebook fa-2x"></i> </a>
+                <a href="/instagram"> <i class="insta fab fa-instagram fa-2x"></i></a>
+                <a href="/twitter">  <i class="tweet fab fa-twitter fa-2x"></i></a></p>
                 <p class="rights"><span>©  </span><span class="copyright-year">2019</span><span> BikeX</span><span>. </span><span>All Rights Reserved.</span></p>
-              <a href="/facebook">   <i class=" fab fa-facebook fa-2x"></i> </a>
-                <a href="/instagram"> <i class="fab fa-instagram fa-2x"></i></a>
-               <a href="/twitter">  <i class="fab fa-twitter fa-2x"></i></a>
               </div>
             </div>
             <div class="abc col-md-4">
               <h3>Contacts</h3>      
               <p class="address"><span>Address: </span><a class="map-responsive" href="https://goo.gl/maps/eJKcARiWnqRXDc5u5">hal 2nd stage, bengaluru</a></p>
-              <div class="sai"><p class="email"><span>Email: </span><a href="mailto:bikex@gmail.com">bikex@gmail.com</a></p></div>
+              <div class="email"><p class="email"><span>Email: </span><a href="mailto:bikex@gmail.com">bikex@gmail.com</a></p></div>
               <p class="phones"><span>Phones: </span><span class="phone">(080) 9999-9999</span></p>
-
             </div>
             <div class="col-md-4 col-xl-3">
               <h3>Company</h3>
@@ -43,6 +41,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 .container{
   padding: 40px 20px 20px 20px;
+  /* padding: 40px 0px 20px 0px; */
   
 }
 .context-dark, .bg-black-dark .bg-primary{
@@ -52,6 +51,7 @@ export default {
   font-size: 1.5rem;
   font-family: 'Coda', cursive;
 font-weight: bold;
+margin-left: -150px;
 }
 .navbar-brand a {
     color: black;
@@ -59,9 +59,15 @@ font-weight: bold;
     background-color: transparent;
     padding-left: 5px;
     font-family: 'Coda', cursive;
-
+    /* margin-left: -100px; */
+}
+.rights {
+  margin-left: 10px;
 }
 
+/* .fb .insta .tweet{
+  margin-left: 10px;
+} */
  ul li a:hover {
     color: rgb(175, 42, 42);
 }
@@ -69,6 +75,25 @@ font-weight: bold;
 .abc a:hover{
   color: rgb(175, 42, 42);
 }
+
+.abc a:hover{
+  color: rgb(175, 42, 42);
+}
+
+/*onhover social icons */
+.fb:hover{
+color: #3B5998
+} 
+
+.insta:hover{
+  
+color: #3f729b
+}
+
+.tweet:hover{
+color: #1da1f2
+}
+
 
 .red{
   color: #EA2027
@@ -78,12 +103,22 @@ font-weight: bold;
     color: #ffffff;
 }
 
+
+
+
 .nav-list li {
     /* padding-top: 5px;
     padding-bottom: 5px; */
         margin-bottom: 1rem;
 
 }
+
+@media (min-width: 1200px){
+.pr-xl-4, .px-xl-4 {
+  margin-left: -300px;
+    /* padding-right: -2.5rem!important; */
+    
+}}
 ul, ol {
     list-style: none;
     padding: 0;

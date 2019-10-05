@@ -1,4 +1,17 @@
 <template>
+<div class="story">
+<div class="article">
+    <div class="image-aboutus-banner"  >
+   <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+            <h1 class="lg-text">Our Story</h1>
+            <p class="image-aboutus-para">Selling the used bikes</p>
+          </div>
+      </div>
+   </div>
+</div>
+</div>
 <div class="container-fluid mb-4">
  <h2> REACH OUT TO US </h2>
  <div class="contact-items">
@@ -18,6 +31,7 @@
       <i class="icon fas fa-phone-volume"></i><a class="info" href="tel:(+91) 9876-543210">(+91) 9876-543210</a>
    </div>
   </div>
+</div>
 </div>
 </template>
 
@@ -72,5 +86,44 @@ padding-top: 25px;
     height: 35px;
 }
 
+/* @media screen and (max-height: 750px) {
+  .contact-items{
+    font-size: 10px; 
+    display: flex;
+flex-direction: row;
+padding-top: 25px;
+  }
+} */
+ .image-aboutus-banner {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), 
+    url("https://images.pexels.com/photos/556962/pexels-photo-556962.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position:  */
+    background-position: center center;
+    color: #fff;
+    padding-top: 110px;
+    padding-bottom:110px;
+    /* height: auto; */
+ }
+ 
+  /* .image-aboutus-sm-banner {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://images.pexels.com/photos/631008/pexels-photo-631008.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom:30px;
+ } */
+.lg-text {
+    font-size:50px;
+    font-weight: 600;
+    text-transform: none;
+    color:#fff;
+}
+.image-aboutus-para {
+    color:rgb(255, 255, 255);
+}
 
 </style>
