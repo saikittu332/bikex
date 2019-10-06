@@ -47,20 +47,20 @@
 <div class="container-fluid">
  <h2> REACH OUT TO US </h2>
  <div class="contact-items">
-   <div class="contact-item"> 
-        <a href="https://vroom.zendesk.com/hc/en-us" name="LinkComponent">
-            <i class=" icon fas fa-question"></i><a class="info" href="visit">Visit Our Experience Center</a>
+   <div class="contact-item ok"> 
+        <a name="LinkComponent" href="/experience">
+            <i class=" icon fas fa-question"></i><a class="infor" href="https://goo.gl/maps/hCavipi3r8gjLh2k9" target="_blank">Visit Our Experience Center</a>
         </a>
     </div>
     <div class="vl"></div>
-   <div class="contact-item">
+   <div class="contact-item ok">
      <a name="LinkComponent" href="/contact">
-        <i class="icon far fa-envelope"></i><a class="info" href="message">Send A Message</a>
+        <i class="icon far fa-envelope"></i><a class="infor" href="message">Send A Message</a>
       </a>
  </div>
  <div class="vl"></div>
-   <div class="contact-item" href="#">
-      <i class="icon fas fa-phone-volume"></i><a class="info" href="tel:(080) 9999-9999">(080) 9999-9999</a>
+   <div class="contact-item ok" href="#">
+      <i class="icon fas fa-phone-volume"></i><a class="infor" href="tel:(080) 9999-9999">(080) 9999-9999</a>
    </div>
   </div>
 </div>
@@ -84,7 +84,10 @@ body{
 .container-fluid{
   background-color: rgb(238, 238, 238);
   border-radius: 0.3em;
-  padding: 2em;  
+  /* padding: 2em;  
+   */
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 h2{
   font-family: 'Coda', cursive;
@@ -96,7 +99,7 @@ h2{
     color: #e7131a;
     padding-left: 15px;
 }
-.info{
+.infor{
   color:black;
   padding-left: 15px;
   padding-right: 15px;
