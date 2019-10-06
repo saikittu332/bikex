@@ -2,7 +2,7 @@
 <footer class="section footer-classic context-dark pl-auto pr-auto col-md-12" style="background: #000000;">
         <div class="container footer pt-4">
           <div class="row">
-            <div class="col-md-3 pl-0 text-left ">
+            <div class="col-md-3 pl-0 text-left ok">
                 <a href="" class="navbar-brand" routerLink="/">BIKE<span class="red">X</span></a>
                <div class="social">
                   <p class="social"><a href="/facebook"><i class="fb fa fa-facebook fa-2x"></i> </a>
@@ -15,7 +15,7 @@
                   <span> BikeX</span><span>. </span><span>All Rights Reserved.</span></p>
                 </div>
             </div>
-            <div class="col-md-3 pl-0 col-xl-3 text-left contentss">
+            <div class="col-md-3 pl-0 col-xl-3 text-left contentss ok">
              <h3 class="menu">CONTACTS</h3> 
               <ul class="nav-list">
                 <li><span>Email: </span><a href="mailto:bikex@gmail.com">bikex@gmail.com</a></li>            
@@ -26,7 +26,7 @@
               </ul>
             </div>
 
-            <div class="col-md-3 pl-0 col-xl-3 text-left contentss">
+            <div class="col-md-3 pl-0 col-xl-3 text-left contentss ok">
               <h3 class="menu">COMPANY</h3>
               <ul class="nav-list">
                 <li><a href="#">Our Story</a></li>
@@ -35,7 +35,7 @@
               </ul>
             </div>
 
-            <div class="col-md-3 col-xl-3 text-left contentss">
+            <div class="col-md-3 col-xl-3 text-left contentss ok">
               <h3 class="menu">EXPERIENCE CENTER</h3>
               <ul class="nav-list">
                 <li> <div class="google-map">
@@ -131,13 +131,13 @@ color: #1da1f2
     color: #ffffff;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .container{
     text-align: center
   }
-.row{
-  text-align: center
-}
+  .ok{
+    text-align: center !important;
+  }
 }
 
 </style>
