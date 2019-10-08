@@ -47,31 +47,36 @@
 <div class="container-fluid">
  <h2> REACH OUT TO US </h2>
  <div class="contact-items">
-   <div class="contact-item ok"> 
+   <div class="contact-item"> 
         <a name="LinkComponent" href="/experience">
             <i class=" icon fas fa-question"></i><a class="infor" href="https://goo.gl/maps/hCavipi3r8gjLh2k9" target="_blank">Visit Our Experience Center</a>
         </a>
     </div>
     <div class="vl"></div>
-   <div class="contact-item ok">
+   <div class="contact-item">
      <a name="LinkComponent" href="/contact">
         <i class="icon far fa-envelope"></i><a class="infor" href="message">Send A Message</a>
       </a>
  </div>
  <div class="vl"></div>
-   <div class="contact-item ok" href="#">
+   <div class="contact-item" href="#">
       <i class="icon fas fa-phone-volume"></i><a class="infor" href="tel:(080) 9999-9999">(080) 9999-9999</a>
    </div>
   </div>
 </div>
+<topmodels></topmodels>
 </div>
 </template>
 
 <script>
+import topmodels from './topmodels'
 export default {
   name: 'about',
-
+  components: {
+    topmodels
+  }
 }
+
 </script>
 
 <style scoped>
@@ -178,4 +183,17 @@ font-family: Calibre-Semibold;
     color: rgb(4, 16, 34);
     text-transform: uppercase;
     }
+  @media only screen and (max-width: 500px) {
+  h2{
+  font-family: 'Coda', cursive;
+  word-spacing: -1px;
+  font-weight: bold;
+}
+.contact-items{
+  display: inline-block
+  }
+  .vl[data-v-277a612d] {
+    border-left: none;
+}
+}
 </style>

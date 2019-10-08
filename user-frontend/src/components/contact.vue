@@ -1,5 +1,5 @@
 <template>
-    <div class="container max-height-">
+    <div class="container">
         <h1 class="hfaq">FREQUENTLY ASKED QUESTION'S</h1>
     <div class="row pb-2">
         <div class="col-lg-4 text-left">

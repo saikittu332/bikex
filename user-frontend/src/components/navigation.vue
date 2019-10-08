@@ -3,7 +3,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <i class='fas fa-align-left' style='font-size:28px'></i>
   </button>
-  <a class="navbar-brand" routerLink="/">BIKE<span class="red">X</span></a>
+  <a class="navbar-brand" href="/">BIKE<span class="red">X</span></a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
      <ul class="navbar-nav mr-auto">
@@ -89,7 +89,7 @@ ul.navbar-nav.mr-auto {
     margin-left: 15px;
 }
 .navbar ul li{
-padding: 5px
+padding: 10px
 }
 .active{
   border-bottom: 2px solid #EA2027;
