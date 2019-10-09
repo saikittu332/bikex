@@ -129,7 +129,7 @@ font-family: 'Montserrat', sans-serif;
 	 pointer-events: none;
 }
 .active1{
-    border-bottom: 1.5px solid red;
+    border-bottom: 1.5px solid #EA2027;
 }
 .bike-name{
     font-weight: bold
@@ -194,7 +194,7 @@ font-family: 'Montserrat', sans-serif;
 	 background-color: #EA2027;
 	 color: #fff;
 	 box-shadow: 0 0 10px rgba(10, 10, 10, 0.5);
-	 border-color: #ea2027;
+	 border-color: #EA2027;
 	 z-index: 1;
 }
  .toggle input:focus + label {
