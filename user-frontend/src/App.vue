@@ -30,6 +30,6 @@ export default {
   text-align: center;    
 }
 .content{
-  margin-top: 100px;
+  margin-top: 74px;
 }
 </style>

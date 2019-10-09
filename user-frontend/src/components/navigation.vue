@@ -1,10 +1,9 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-light bg-light mb-2 fixed-top">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <i class='fas fa-align-left' style='font-size:28px'></i>
-  </button>
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-2 pb-0 pt-0 mt-0 fixed-top">
   <a class="navbar-brand" href="/">BIKE<span class="red">X</span></a>
-
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <i class='fas fa-align-left' style='font-size:28px'></i>
+    </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
      <ul class="navbar-nav mr-auto">
       
@@ -38,7 +37,7 @@
 
 }
 .navbar-brand{
-  font-size: 2.25rem;
+  font-size: 2.00rem;
   font-family: 'Coda', cursive;
   font-weight: bold;
 }
@@ -74,6 +73,12 @@ input.form-control{
   input.form-control{
      width: 200px;
   }
+  .navbar-brand{
+  font-size: 1.55rem;
+  font-family: 'Coda', cursive;
+  margin-bottom:0px;
+
+}
 }
 .navbar-collapse {
     margin-bottom: 20px

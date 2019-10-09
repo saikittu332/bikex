@@ -2,98 +2,124 @@
     <div class="bikes">              
         <div class="container col-md-12">  
             <nav aria-label="breadcrumb mb-0 pb-0">
-            <ol class="breadcrumb mb-0 pb-0">
-                <li aria-current="page" class="breadcrumb-item active">
-                    <ol class="breadcrumb mb-0 pb-0">
-                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item active"><a>Bikes</a></li>
-                    </ol>
-                </li>
-                <li aria-current="page" class="ml-auto">
-                    <div class="toggle">
-                        <input type="radio" name="sizeBy" value="standard" id="standard" onclick="location.href='/standard'" checked="checked" />
-                        <label for="standard" >Standard</label>
-                        <input type="radio" name="sizeBy" value="premium" id="premium" onclick="location.href='/premium'" />
-                        <label for="premium" >Premium</label>
-                    </div>
-                </li>
-            </ol>
+                <ol class="breadcrumb mb-0 pb-0">
+                    <li aria-current="page" class="breadcrumb-item active">
+                        <ol class="breadcrumb mb-0 pb-0">
+                            <li class="breadcrumb-item notactive"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item active"><a>Bikes</a></li>
+                        </ol>
+                    </li>
+                    <li aria-current="page" class="ml-auto">
+                        <div class="toggle">
+                            <input type="radio" name="sizeBy" value="standard" id="standard" onclick="" checked="checked" />
+                            <label for="standard" >Standard</label>
+                            <input type="radio" name="sizeBy" value="premium" id="premium" onclick="" />
+                            <label for="premium" >Premium</label>
+                        </div>
+                    </li>
+                </ol>
             </nav>
-            <nav class="nav mb-4 desktop">
-            <a class="nav-link active1" href="#">100cc - 150cc</a>
-            <a class="nav-link" href="#">150cc - 200cc</a>
-            <a class="nav-link" href="#">200-cc - 250cc</a>
+
+            <nav class="nav mb-1 desktop text-left">
+                <a class="nav-link active1" href="#">100CC - 150CC</a>
+                <a class="nav-link" href="#">150CC - 200CC</a>
+                <a class="nav-link" href="#">200CC - 250CC</a>
+            </nav>
             
-            </nav>
             <div class="form-group mobile">
                 <label for="sel1">Select CC:</label>
                 <select class="form-control" id="sel1">
-                    <option>100cc - 150cc</option>
-                    <option>150cc - 200cc</option>
-                    <option>200-cc - 250cc</option>
+                    <option>100CC - 150CC</option>
+                    <option>150CC - 200CC</option>
+                    <option>200-CC - 250CC</option>
                 </select>
             </div>
-        </div>                   
-    <div class="container pb-4">   
-  <div class="row">
-    <div class="col-6 col-md-4 col-lg-3 pt-2">
-     <div class="motorbike">
-        <div class="card">
-          <div class="image">
-             <img src="../assets/16-aether.png" width="auto" height="70px">
-          </div>
-                <div class="card-body">
-                    <p class="bike-name">SCOOTER</p>
-                </div>
-        </div>
-     </div>
-    </div>
-    <div class="col-6 col-md-4 col-lg-3 pt-2">
-       <div class="moterbike">
-          <div class="card"> 
-            <div class="image">
-             <img src="../assets/16-aether.png" width="auto" height="70px">
-            </div>
-                <div class="card-body">
-                    <p class="bike-name">BIKES</p>
-                </div>
-         </div>
-       </div>
-    </div>
-    <div class="col-6 col-md-4 col-lg-3 pt-2">
-       <div class="moterbike">
-          <div class="card"> 
-            <div class="image">
-             <img src="../assets/16-aether.png" width="auto" height="70px">
-            </div>
-                <div class="card-body">
-                    <p class="bike-name">BIKES</p>
-                </div>
-         </div>
-       </div>
-    </div>
-      <div class="col-6 col-md-4 col-lg-3 pt-2">
-       <div class="moterbike">
-          <div class="card"> 
-            <div class="image">
-             <img src="../assets/16-aether.png" width="auto" height="70px">
-            </div>
-                <div class="card-body">
-                    <p class="bike-name">BIKES</p>
-                </div>
-         </div>
-       </div>
-    </div>
-   
-  </div>
-</div>
-</div>
-</template>
+        </div>  
+        <!-- first container ends -->
 
+        <div class="container bikes mb-4 py-2 col-lg-12">   
+            <div class="row pl-2 pr-2">
+                <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                    <div class="motorbike">
+                        <div class="card">
+                            <div class="image">
+                                <img src="../assets/bikes/03-suzuki-access-125.png" width="100%" height="55%">
+                            </div>
+                            <div class="card-body">
+                                <p class="bike-name">SUZUKI</p>
+                                <p>150 CC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                    <div class="moterbike">
+                        <div class="card"> 
+                            <div class="image">
+                                <img src="../assets/bikes/10-bajaj-pulsar-150.png" width="100%" height="55%">
+                            </div>
+                            <div class="card-body">
+                                <p class="bike-name">PULSAR</p>
+                                <p>150 CC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                    <div class="moterbike">
+                        <div class="card"> 
+                            <div class="image">
+                                <img src="../assets/bikes/15-vespa-vxl-125.png" width="100%" height="55%">
+                            </div>
+                            <div class="card-body">
+                                <p class="bike-name">Vespa</p>
+                                <p>180 CC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                    <div class="moterbike">
+                        <div class="card"> 
+                            <div class="image">
+                                <img src="../assets/bikes/14-aprilia.png" width="100%" height="55%">
+                            </div>
+                            <div class="card-body">
+                                <p class="bike-name">Aprilla</p>
+                                <p>125 CC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!-- second container ends here -->
+    </div>
+</template>
+<script></script>
+export default {
+    data{
+        return{
+            images:[
+                {
+                    image:'',
+
+                }
+            ]
+        }
+    }
+}
+</script>
 
 <style scoped>
 .breadcrumb{
 background-color: transparent;
+padding:0 !important;
+font-family: 'Montserrat', sans-serif;
+
 }
 .dropdown:hover > .dropdown-menu {
 	 display: block;
@@ -103,9 +129,15 @@ background-color: transparent;
 	 pointer-events: none;
 }
 .active1{
-    border-bottom: 1px solid red;
+    border-bottom: 1.5px solid red;
 }
-
+.bike-name{
+    font-weight: bold
+}
+.image img{
+    cursor: pointer;
+  transition: all 0.4s ease;
+}
 
  .toggle {
 	 margin: 0 0 1.5rem;
@@ -126,14 +158,14 @@ background-color: transparent;
  .toggle input + label {
 	 margin: 0;
 	 /* padding: 0.75rem 2rem; */
-         padding: 0.15rem 0.5rem;
+       padding: 0.15rem 0.5rem;
          margin-top: 7px;
 	 box-sizing: border-box;
 	 position: relative;
 	 display: inline-block;
 	 border: solid 1px #ddd;
 	 background-color: #fff;
-	 font-size: 1rem;
+	 font-size: 0.7rem;
 	 line-height: 140%;
 	 font-weight: 600;
 	 text-align: center;
@@ -159,10 +191,10 @@ background-color: transparent;
 	 border-color: #213140;
 }
  .toggle input:checked + label {
-	 background-color: #4b9dea;
+	 background-color: #EA2027;
 	 color: #fff;
-	 box-shadow: 0 0 10px rgba(102, 179, 251, .5);
-	 border-color: #4b9dea;
+	 box-shadow: 0 0 10px rgba(10, 10, 10, 0.5);
+	 border-color: #ea2027;
 	 z-index: 1;
 }
  .toggle input:focus + label {
@@ -170,11 +202,26 @@ background-color: transparent;
 }
 .mobile{
     display: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.desktop a{
+    color: #213140;
+    font-size: 14px;
+}
+.desktop .nav-link {
+    display: block;
+    padding-left: 0px;
+    margin-right: 11px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+        font-family: 'Montserrat', sans-serif;
+
 }
  @media (max-width: 800px) {
 	 .toggle input + label {
 		 /* padding: 0.75rem 0.25rem; */
          padding: 0.25rem 0.25rem;
+         margin-top: 0px;
 		 flex: 0 0 50%;
 		 display: flex;
 		 justify-content: center;
@@ -186,6 +233,20 @@ background-color: transparent;
     .mobile{
         display: block;
     }
+    .breadcrumb li a{
+        font-size: 13px;
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+        font-size: 10px;
+        padding:2px;
+    }
+    .breadcrumb-item.active {
+         padding-left: 1px;
+    }
+    .breadcrumb-item.notactive a{
+         padding-left: 1px;
+         color: #EA2027
+    }
 }
 
 
@@ -196,17 +257,21 @@ background-color: transparent;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 .topic p{
     font-size: 18px;
     font-weight:bold;
-    font-family: 'Scada', sans-serif;
+      font-family: 'Montserrat', sans-serif;
+}
+.card-body{
+    padding: 6px
 }
 .card-body p{
       font-size: 13px;
-      margin-top: 10px;
+      margin-top: 0px;
       font-family: 'Montserrat', sans-serif;
+      line-height: 3PX;
+      padding:0px;
 }
  
 </style>
