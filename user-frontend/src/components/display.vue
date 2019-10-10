@@ -2,7 +2,7 @@
 <div class="display mt-2 mb-4">
  <div class="row">
     <div class="col-md-6">
-    <carousel perPage="1" loop="true" paginationActiveColor="#EA2027">
+    <carousel perPage="1" :loop="true" paginationActiveColor="#EA2027">
     <slide>
       <div class="image">
         <img src="../assets/bikes/06-honda-dio.png" width="100%" height="55%">

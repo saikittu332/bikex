@@ -94,6 +94,123 @@
                         </div>
                     </div>
                 </div>  
+                 <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                    <div class="moterbike">
+                        <div class="card"> 
+                            <div class="image">
+                                <img src="../assets/bikes/09-hero-maestro-edge.png" width="100%" height="55%">
+                            </div>
+                            <div class="card-body">
+                                <p class="bike-name">Maestro</p>
+                                <p>125 CC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                 <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                    <div class="moterbike">
+                        <div class="card"> 
+                            <div class="image">
+                                <img src="../assets/bikes/11-bajaj-ct-100.png" width="100%" height="55%">
+                            </div>
+                            <div class="card-body">
+                                <p class="bike-name">Bajaj CT</p>
+                                <p>125 CC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                 <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                    <div class="moterbike">
+                        <div class="card"> 
+                            <div class="image">
+                                <img src="../assets/bikes/09-hero-maestro-edge.png" width="100%" height="55%">
+                            </div>
+                            <div class="card-body">
+                                <p class="bike-name">Maestro</p>
+                                <p>125 CC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                 <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                    <div class="moterbike">
+                        <div class="card"> 
+                            <div class="image">
+                                <img src="../assets/bikes/14-aprilia.png" width="100%" height="55%">
+                            </div>
+                            <div class="card-body">
+                                <p class="bike-name">Aprilla</p>
+                                <p>125 CC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                 <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                    <div class="moterbike">
+                        <div class="card"> 
+                            <div class="image">
+                                <img src="../assets/bikes/08-honda-activa.png" width="100%" height="55%">
+                            </div>
+                            <div class="card-body">
+                                <p class="bike-name">Honda Activa</p>
+                                <p>125 CC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                 <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                    <div class="moterbike">
+                        <div class="card"> 
+                            <div class="image">
+                                <img src="../assets/bikes/03-suzuki-access-125.png" width="100%" height="55%">
+                            </div>
+                            <div class="card-body">
+                                <p class="bike-name">Suzuki</p>
+                                <p>125 CC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                 <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                    <div class="moterbike">
+                        <div class="card"> 
+                            <div class="image">
+                                <img src="../assets/bikes/17-hero-duet.png" width="100%" height="55%">
+                            </div>
+                            <div class="card-body">
+                                <p class="bike-name">Hero Duet</p>
+                                <p>125 CC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                 <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                    <div class="moterbike">
+                        <div class="card"> 
+                            <div class="image">
+                                <img src="../assets/bikes/07-honda-aviator.png" width="100%" height="55%">
+                            </div>
+                            <div class="card-body">
+                                <p class="bike-name">Aprilla</p>
+                                <p>125 CC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                 <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                    <div class="moterbike">
+                        <div class="card"> 
+                            <div class="image">
+                                <img src="../assets/bikes/13-bajaj-avenger-220-cruise.png" width="100%" height="55%">
+                            </div>
+                            <div class="card-body">
+                                <p class="bike-name">Avenger</p>
+                                <p>125 CC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
             </div>
         </div>
         <!-- second container ends here -->
