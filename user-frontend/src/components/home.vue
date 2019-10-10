@@ -5,7 +5,7 @@
       <p>Discover your bike</p>
     </div>
       <div class="row">
-       <div class="col-md-4 col-4 p-1 m-0">
+       <div class="col-md-4 col-4 p-1 m-0" @click="bikes">
             <div class="card"> 
               <div class="image">
                 <img src="../assets/scooter.svg" width="70%" height="35%">
@@ -15,7 +15,7 @@
               </div>
             </div>
        </div>
-        <div class="col-md-4 col-4 p-1 m-0">
+        <div class="col-md-4 col-4 p-1 m-0" @click="scooters">
             <div class="card"> 
               <div class="image">
                 <img src="../assets/scooter.svg" width="70%" height="35%">
@@ -25,7 +25,7 @@
               </div>
             </div>
        </div>
-        <div class="col-md-4 col-4 p-1 m-0">
+        <div class="col-md-4 col-4 p-1 m-0" @click="racings">
             <div class="card">
               <div class="image">
                 <img src="../assets/scooter.svg" width="70%" height="30%">
@@ -136,24 +136,6 @@
         </div>
     </div>
   </div> -->
-<div class="container ">
-  
-  <div class="row">
-    <div class="col-md-4 demo">
-    <h1>working</h1>
-    </div>
-  
-  <div class="col-md-4 demo">
-    <h1>working</h1>
-    </div> 
-  
-  <div class="col-md-4 demo">
-    <h1>working</h1>
-    </div>   
-  </div>
-</div>
-
-
 </div>
 </template>
 
@@ -179,30 +161,33 @@ components: {
     carousel 
   },
   methods:{
-      price: function(){
-          this.prices= true;
-          this.reconditioning = false;
+      // price: function(){
+      //     this.prices= true;
+      //     this.reconditioning = false;
           
-      },
-      reconditions: function(){
-        this.reconditioning = true;
+      // },
+      // reconditions: function(){
+      //   this.reconditioning = true;
           
-      },
-      returnss: function(){
-          this.prices = false;
-          this.reconditioning = false;
-          this.finance = false;
-          this.coverage = false;
-          this.returns = true;
-      },
-       finances: function(){
-          this.finance = true;
-          this.prices = false;
-          this.reconditioning = false;
-          this.returns = false;
-          this.coverage = false;
+      // },
+      // returnss: function(){
+      //     this.prices = false;
+      //     this.reconditioning = false;
+      //     this.finance = false;
+      //     this.coverage = false;
+      //     this.returns = true;
+      // },
+      //  finances: function(){
+      //     this.finance = true;
+      //     this.prices = false;
+      //     this.reconditioning = false;
+      //     this.returns = false;
+      //     this.coverage = false;
+      // }
+      bikes: function(){this.$router.push({path:'/bikes'})},
+      scooters: function(){this.$router.push({path:'/scooters'})},
+      racings: function(){this.$router.push({path:'/racing'})},
       }
-  }
   }
 </script>
 
@@ -262,6 +247,7 @@ font-style: italic;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 2px;
+    cursor: pointer;
 }
 .header p{
       font-size: 16px;
