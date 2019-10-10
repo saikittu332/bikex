@@ -6,7 +6,7 @@
                     <li aria-current="page" class="breadcrumb-item active">
                         <ol class="breadcrumb mb-0 pb-0">
                             <li class="breadcrumb-item notactive"><a href="/">Home</a></li>
-                            <li class="breadcrumb-item active"><a href="/vehicles">Vehicles</a></li>
+                            <li class="breadcrumb-item active"><a @click="vehicles" style="curser:pointer">Vehicles</a></li>
                             <li class="breadcrumb-item active"><a>Scooters</a></li>
                         </ol>
                     </li>
@@ -177,18 +177,12 @@
         <!-- second container ends here -->
     </div>
 </template>
-<script></script>
+<script>
 export default {
-    data{
-        return{
-            images:[
-                {
-                    image:'',
-
-                }
-            ]
-        }
-    }
+    
+  methods:{
+            vehicles: function(){this.$router.push({path:'/vehicles'})},
+  }
 }
 </script>
 
