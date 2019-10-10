@@ -25,7 +25,7 @@
         <a class="story"><router-link to="/" exact-active-class="active">OUR STORY</router-link></a>
       </li>
       <li class="nav-item">
-       <a class="models"><router-link to="/bikes" exact-active-class="active">MODELS</router-link></a>
+       <a class="models"><router-link to="/vehicles" exact-active-class="active">MODELS</router-link></a>
       </li>
       <li class="nav-item">
        <a class="faq"><router-link to="/contact" exact-active-class="active">FAQ'S</router-link></a>
