@@ -1,5 +1,17 @@
 <template>
 <div class="display mt-2 mb-4">
+  <nav aria-label="breadcrumb mb-2  pb-2">
+    <ol class="breadcrumb mb-0 ml-3 pb-0">
+      <li aria-current="page" class="breadcrumb-item active1">
+        <ol class="breadcrumb mb-0 pb-0">
+          <li class="breadcrumb-item notactive"><a href="/">Home</a></li>
+          <li class="breadcrumb-item active1"><router-link to="/vehicles">Vehicles</router-link></li>
+          <li class="breadcrumb-item active1"><router-link to="/bikes">Bikes</router-link></li>
+          <li class="breadcrumb-item active1"><a>suzuki 125</a></li>
+        </ol>
+      </li>
+    </ol>
+  </nav>
  <div class="row">
     <div class="col-md-6">
     <carousel perPage="1" :loop="true" paginationActiveColor="#EA2027">
@@ -161,6 +173,17 @@
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Coda:800&display=swap');
+a {
+    color: #EA2027;
+    text-decoration: none;
+    background-color: transparent;
+}
+.breadcrumb{
+background-color: transparent;
+padding:0 !important;
+font-family: 'Montserrat', sans-serif;
+
+}
 .active{
   border-bottom: 2px solid #EA2027;
 }

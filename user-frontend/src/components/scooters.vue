@@ -6,7 +6,7 @@
                     <li aria-current="page" class="breadcrumb-item active">
                         <ol class="breadcrumb mb-0 pb-0">
                             <li class="breadcrumb-item notactive"><a href="/">Home</a></li>
-                            <li class="breadcrumb-item active"><a href="/vehicles">Vehicles</a></li>
+                            <li class="breadcrumb-item active"><router-link to="/vehicles">Vehicles</router-link></li>
                             <li class="breadcrumb-item active"><a>Scooters</a></li>
                         </ol>
                     </li>
@@ -39,10 +39,10 @@
         <!-- first container ends -->
 
         <div class="container bikes mb-4 py-2 col-lg-12">   
-            <div class="row pl-2 pr-2">
-                <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
-                    <div class="motorbike">
-                        <div class="card">
+            <div class="row pl-2 pr-2" >
+                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1" >
+                    <div class="motorbike" @click="display" >
+                        <div class="card" >
                             <div class="image">
                                 <img src="../assets/bikes/03-suzuki-access-125.png" width="100%" height="55%">
                             </div>
@@ -54,7 +54,7 @@
                     </div>
                 </div>
 
-                <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                 </div>  
-                 <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                 </div>   
-                <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                 </div>  
-                 <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                 </div>  
-                 <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                 </div>  
-                 <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -146,7 +146,7 @@
                         </div>
                     </div>
                 </div>  
-                 <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -159,7 +159,7 @@
                         </div>
                     </div>
                 </div>  
-                 <div class="col-4 col-md-4 col-lg-3 pt-2 pr-1 pl-1">
+                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -177,22 +177,20 @@
         <!-- second container ends here -->
     </div>
 </template>
-<script></script>
+<script>
 export default {
-    data{
-        return{
-            images:[
-                {
-                    image:'',
-
-                }
-            ]
-        }
+    methods:{
+         display: function(){this.$router.push({path:'/display'})},
     }
 }
 </script>
 
 <style scoped>
+a {
+    color: #EA2027;
+    text-decoration: none;
+    background-color: transparent;
+}
 .breadcrumb{
 background-color: transparent;
 padding:0 !important;

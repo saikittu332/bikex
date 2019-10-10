@@ -25,13 +25,13 @@
               </div>
             </div>
        </div>
-        <div class="col-md-4 col-4 p-1 m-0" @click="racings">
+        <div class="col-md-4 col-4 p-1 m-0" @click="sport">
             <div class="card">
               <div class="image">
                 <img src="../assets/scooter.svg" width="70%" height="30%">
               </div>
               <div class="card-body p-2 m-0">
-                <p class="bike-name">Racing</p>
+                <p class="bike-name">Sport Bikes</p>
               </div>
             </div>
         </div>
@@ -186,7 +186,7 @@ components: {
       // }
       bikes: function(){this.$router.push({path:'/bikes'})},
       scooters: function(){this.$router.push({path:'/scooters'})},
-      racings: function(){this.$router.push({path:'/racing'})},
+      sport: function(){this.$router.push({path:'/sport'})},
       }
   }
 </script>

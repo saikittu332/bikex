@@ -7,7 +7,7 @@
                         <ol class="breadcrumb mb-0 pb-0">
                             <li class="breadcrumb-item notactive"><a href="/">Home</a></li>
                             <li class="breadcrumb-item active"><router-link to="/vehicles">Vehicles</router-link></li>
-                            <li class="breadcrumb-item active"><a>Bikes</a></li>
+                            <li class="breadcrumb-item active"><a>Sport Bikes</a></li>
                         </ol>
                     </li>
                     <li aria-current="page" class="ml-auto">
@@ -22,17 +22,19 @@
             </nav>
 
             <nav class="nav mb-1 desktop text-left">
-                <a class="nav-link active1" href="#">100CC - 150CC</a>
-                <a class="nav-link" href="#">150CC - 200CC</a>
+                <!-- <a class="nav-link " href="#">100CC - 150CC</a> -->
+                <a class="nav-link active1" href="#">150CC - 200CC</a>
                 <a class="nav-link" href="#">200CC - 250CC</a>
+                <a class="nav-link" href="#">250CC - 400CC</a>
             </nav>
             
             <div class="form-group mobile">
                 <label for="sel1">Select CC:</label>
                 <select class="form-control" id="sel1">
-                    <option>100CC - 150CC</option>
+                    <!-- <option>100CC - 150CC</option> -->
                     <option>150CC - 200CC</option>
                     <option>200-CC - 250CC</option>
+                    <option>250-CC - 400CC</option>
                 </select>
             </div>
         </div>  
@@ -41,7 +43,21 @@
         <div class="container bikes mb-4 py-2 col-lg-12">   
             <div class="row pl-2 pr-2">
                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
-                    <div class="moterbike" @click="display">
+                    <div class="motorbike" @click="display">
+                        <div class="card">
+                            <div class="image">
+                                <img src="../assets/bikes/sportbike.jpg" width="100%" height="55%">
+                            </div>
+                            <div class="card-body">
+                                <p class="bike-name">SUZUKI</p>
+                                <p>150 CC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
+                    <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
                                 <img src="../assets/bikes/10-bajaj-pulsar-150.png" width="100%" height="55%">
@@ -49,45 +65,6 @@
                             <div class="card-body">
                                 <p class="bike-name">PULSAR</p>
                                 <p>150 CC</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
-                    <div class="moterbike">
-                        <div class="card"> 
-                            <div class="image">
-                                <img src="../assets/bikes/11-bajaj-ct-100.png" width="100%" height="55%">
-                            </div>
-                            <div class="card-body">
-                                <p class="bike-name">Bajaj CT</p>
-                                <p>125 CC</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>  
-                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
-                    <div class="moterbike">
-                        <div class="card"> 
-                            <div class="image">
-                                <img src="../assets/bikes/09-hero-maestro-edge.png" width="100%" height="55%">
-                            </div>
-                            <div class="card-body">
-                                <p class="bike-name">Maestro</p>
-                                <p>125 CC</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>  
-                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
-                    <div class="moterbike">
-                        <div class="card"> 
-                            <div class="image">
-                                <img src="../assets/bikes/13-bajaj-avenger-220-cruise.png" width="100%" height="55%">
-                            </div>
-                            <div class="card-body">
-                                <p class="bike-name">Avenger</p>
-                                <p>125 CC</p>
                             </div>
                         </div>
                     </div>
@@ -108,7 +85,7 @@ export default {
     //             }
     //         ]
     //     }
-    // },
+    // }
     methods:{
          display: function(){this.$router.push({path:'/display'})},
     }
@@ -125,7 +102,6 @@ a {
 background-color: transparent;
 padding:0 !important;
 font-family: 'Montserrat', sans-serif;
-
 }
 .dropdown:hover > .dropdown-menu {
 	 display: block;
@@ -241,10 +217,12 @@ font-family: 'Montserrat', sans-serif;
     }
     .breadcrumb li a{
         font-size: 13px;
+        color: #EA2027
     }
     .breadcrumb-item+.breadcrumb-item::before {
         font-size: 10px;
         padding:2px;
+        
     }
     .breadcrumb-item.active {
          padding-left: 1px;

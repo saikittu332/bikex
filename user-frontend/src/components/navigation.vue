@@ -1,16 +1,16 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2 pb-0 pt-0 mt-0 fixed-top">
   <a class="navbar-brand" href="/">BIKE<span class="red">X</span></a>
-  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <i class='fas fa-align-left' style='font-size:28px'></i>
-    </button> -->
-     <ul class="navbar-nav mr-auto">
+    </button>
+     <!-- <ul class="navbar-nav mr-auto">
       
        <form class=" msearch mr-2">
       <button class="btn btn-outline-success0" type="submit"></button>
       <input class="form-control" type="search" placeholder="Search by Models" aria-label="Search">
     </form>
-    </ul>
+    </ul> -->
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
      <ul class="navbar-nav mr-auto">
       
@@ -128,7 +128,7 @@ button.btn.btn-outline-success0 {
  input.form-control:focus {
     border-bottom: 1px solid #EA2027;
 }
-
+/* 
 .msearch{
   display: none;
 }
@@ -141,5 +141,5 @@ button.btn.btn-outline-success0 {
        display: inline-block
      }
 
-}
+} */
 </style>
