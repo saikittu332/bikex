@@ -1,7 +1,7 @@
 <template>
 <div class="home">
-  <div class="container col-md-8 mb-4">
-    <div class="header text-center">
+  <div class="container col-md-8 mb-4 mt-4">
+    <div class="header text-center mt-4">
       <p>Discover your bike</p>
     </div>
       <div class="row">
@@ -35,6 +35,7 @@
               </div>
             </div>
         </div>
+        <hr>
      </div>
   </div>
   <div class="quotes col-12 col-md-12 mb-4 pt-4 pb-4">

@@ -33,8 +33,9 @@
 @import url('https://fonts.googleapis.com/css?family=Coda:800&display=swap');
 
 .navbar{
-  box-shadow: 0 3px 7px 0 #e9e9e9;
-
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;
+    background: white;
+    transition: all 250ms ease-in-out 0s;
 }
 .navbar-brand{
   font-size: 2.00rem;
