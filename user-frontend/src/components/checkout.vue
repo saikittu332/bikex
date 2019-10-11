@@ -1,42 +1,34 @@
 <template>
     <div class="row">
-        <div class="address">
-          <h4 class="mb-3 mt-3">Billing address</h4>
-          <form class="needs-validation" novalidate>
-            <div class="row">
-                <div class="mb-3">
-                    <label for="firstName">Full Name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                    
-                </div>
-
-                <div class="mb-3">
-                    <label for="phone">Mobile Number</label>
-                    <input type="text" class="form-control" id="phone" placeholder="" value="" required>
-                  
-                </div>
-
-                <div class="mb-3 mr-2">
-                    <label for="email">Email Address</label>
-                    <input type="text" class="form-control" id="email" placeholder="" value="" required>
-                    
-                </div>
+      <div class="address">
+        <h4 class="mb-3 mt-3">Billing address</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="mb-3">
+              <label for="firstName">Full Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone">Mobile Number</label>
+               <input type="text" class="form-control" id="phone" placeholder="" value="" required>  
+            </div>
+            <div class="mb-3 mr-2">
+              <label for="email">Email Address</label>
+              <input type="text" class="form-control" id="email" placeholder="" value="" required>    
+            </div>
             </div>
             <div class="row">
-                <div class=" mb-3">
-                    <label for="address">Address</label>
-                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-                    
-                </div>
-       
-                <div class="mb-3">
-                    <label for="zip">Zip-Code</label>
-                    <input type="text" class="form-control" id="zip" placeholder="" required>
-                    
-                </div>
+              <div class=" mb-3">
+                <label for="address">Address</label>
+                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>   
+              </div>
+              <div class="mb-3">
+                <label for="zip">Zip-Code</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+              </div>
             </div> 
             <hr class="mb-4">
-
+            
             <!-- <h4 class="mb-3">Payment</h4>
 
             <div class="d-block my-3">
@@ -98,6 +90,18 @@
 </template>
 
 <style scoped>
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    justify-content: center;
+}
+.address{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+}
 .form-control {
     margin-left: 25px;
     display: block;
@@ -113,27 +117,7 @@
     border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-/* 
-      border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: groove; */
-}
-
-.form-control {
-box-shadow: none!important;}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 0px;
-    justify-content: center;
-}
-.address{
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-}
+    box-shadow: none!important;
+}    
 </style>
 

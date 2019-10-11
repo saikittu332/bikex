@@ -1,4 +1,39 @@
+<<<<<<< HEAD
    <template>
+=======
+<template>
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-2 pb-0 pt-0 mt-0 fixed-top">
+  <a class="navbar-brand" href="/">BIKE<span class="red">X</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <i class='fas fa-align-left' style='font-size:28px'></i>
+    </button>
+     <!-- <ul class="navbar-nav mr-auto">
+      
+       <form class=" msearch mr-2">
+      <button class="btn btn-outline-success0" type="submit"></button>
+      <input class="form-control" type="search" placeholder="Search by Models" aria-label="Search">
+    </form>
+    </ul> -->
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+     <ul class="navbar-nav mr-auto">
+      
+       <form class="form-inline">
+      <button class="btn btn-outline-success0" type="submit"><i class="fa fa-search"></i></button>
+      <input class="form-control" type="search" placeholder="Search by Models" aria-label="Search">
+    </form>
+    </ul>
+    <ul class="navbar-nav ">
+    
+       <li class="nav-item">
+        <a class="story"><router-link to="/" exact-active-class="active">OUR STORY</router-link></a>
+      </li>
+      <li class="nav-item">
+       <a class="models"><router-link to="/vehicles" exact-active-class="active">MODELS</router-link></a>
+      </li>
+      <li class="nav-item">
+       <a class="faq"><router-link to="/faq" exact-active-class="active">FAQ'S</router-link></a>
+      </li>
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
 
 <div id="app">
   <nav class="navbar col-lg-12 col-12 mr-0 pb-0 fixed-top">
@@ -142,6 +177,7 @@ input.autocomplete-input {
     i.fas.fa-search{
     padding-top: 6px;
 }
+<<<<<<< HEAD
     .navbar .mobile{
       display: block
     }
@@ -166,4 +202,20 @@ input.autocomplete-input {
 .myClass{
 background-image: none;
 }
+=======
+/* 
+.msearch{
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+     .form-inline {
+        display:none;
+     }
+     .msearch{
+       display: inline-block
+     }
+
+} */
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
 </style>

@@ -7,7 +7,7 @@
                         <ol class="breadcrumb mb-0 pb-0">
                             <li class="breadcrumb-item notactive"><a href="/">Home</a></li>
                             <li class="breadcrumb-item active"><router-link to="/vehicles">Vehicles</router-link></li>
-                            <li class="breadcrumb-item active"><a>Bikes</a></li>
+                            <li class="breadcrumb-item active"><a>Sport Bikes</a></li>
                         </ol>
                     </li>
                     <li aria-current="page" class="ml-auto">
@@ -22,46 +22,42 @@
             </nav>
 
             <nav class="nav mb-1 desktop text-left">
-                <a class="nav-link active1" href="#">100CC - 150CC</a>
-                <a class="nav-link" href="#">150CC - 200CC</a>
+                <!-- <a class="nav-link " href="#">100CC - 150CC</a> -->
+                <a class="nav-link active1" href="#">150CC - 200CC</a>
                 <a class="nav-link" href="#">200CC - 250CC</a>
+                <a class="nav-link" href="#">250CC - 400CC</a>
             </nav>
             
             <div class="form-group mobile">
-                <!-- <label for="sel1">Select CC:</label>
+                <label for="sel1">Select CC:</label>
                 <select class="form-control" id="sel1">
-                    <option>100CC - 150CC</option>
+                    <!-- <option>100CC - 150CC</option> -->
                     <option>150CC - 200CC</option>
                     <option>200-CC - 250CC</option>
-                </select> -->
-                <div id="main" class="">
-                    <button class="btn select" @click="cc= !cc">Select CC</button>
-                    <div id="mySidenav" class="sidenav" v-bind:class="{ open: cc }">
-                                    <div class="row mt-3 mb-2">
-                                        <div class="col-4">
-                                            <button class="btn cc-display">100-150</button>
-                                        </div>
-                                         <div class="col-4">
-                                            <button class="btn cc-display">150-200</button>
-                                        </div>
-                                         <div class="col-4">
-                                            <button class="btn cc-display">200-250</button>
-                                        </div>
-                                    </div>
-                                </div>
-                    </div>
-                </div>
-            </div>  
+                    <option>250-CC - 400CC</option>
+                </select>
+            </div>
+        </div>  
         <!-- first container ends -->
 
         <div class="container bikes mb-4 py-2 col-lg-12">   
             <div class="row pl-2 pr-2">
                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
-<<<<<<< HEAD
+                    <div class="motorbike" @click="display">
+                        <div class="card">
+                            <div class="image">
+                                <img src="../assets/bikes/sportbike.jpg" width="100%" height="55%">
+                            </div>
+                            <div class="card-body">
+                                <p class="bike-name">SUZUKI</p>
+                                <p>150 CC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
-=======
-                    <div class="moterbike" @click="display">
->>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                         <div class="card"> 
                             <div class="image">
                                 <img src="../assets/bikes/10-bajaj-pulsar-150.png" width="100%" height="55%">
@@ -69,45 +65,6 @@
                             <div class="card-body">
                                 <p class="bike-name">PULSAR</p>
                                 <p>150 CC</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
-                    <div class="moterbike">
-                        <div class="card"> 
-                            <div class="image">
-                                <img src="../assets/bikes/11-bajaj-ct-100.png" width="100%" height="55%">
-                            </div>
-                            <div class="card-body">
-                                <p class="bike-name">Bajaj CT</p>
-                                <p>125 CC</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>  
-                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
-                    <div class="moterbike">
-                        <div class="card"> 
-                            <div class="image">
-                                <img src="../assets/bikes/09-hero-maestro-edge.png" width="100%" height="55%">
-                            </div>
-                            <div class="card-body">
-                                <p class="bike-name">Maestro</p>
-                                <p>125 CC</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>  
-                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
-                    <div class="moterbike">
-                        <div class="card"> 
-                            <div class="image">
-                                <img src="../assets/bikes/13-bajaj-avenger-220-cruise.png" width="100%" height="55%">
-                            </div>
-                            <div class="card-body">
-                                <p class="bike-name">Avenger</p>
-                                <p>125 CC</p>
                             </div>
                         </div>
                     </div>
@@ -119,16 +76,6 @@
 </template>
 <script>
 export default {
-<<<<<<< HEAD
-    data(){
-        return{
-            cc: false
-        }
-    },
-   methods:{
-
-   }
-=======
     // data{
     //     return{
     //         images:[
@@ -138,23 +85,14 @@ export default {
     //             }
     //         ]
     //     }
-    // },
+    // }
     methods:{
          display: function(){this.$router.push({path:'/display'})},
     }
->>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
 }
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Scada&display=swap');
-#bikes {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 a {
     color: #EA2027;
     text-decoration: none;
@@ -165,23 +103,25 @@ background-color: transparent;
 padding:0 !important;
 font-family: 'Montserrat', sans-serif;
 }
-/* .dropdown:hover > .dropdown-menu {
+.dropdown:hover > .dropdown-menu {
 	 display: block;
 }
  .dropdown > .dropdown-toggle:active {
+	/*Without this, clicking will make it sticky*/
 	 pointer-events: none;
-<<<<<<< HEAD
 }
- ::-webkit-scrollbar { 
-    display: none; 
-}
-=======
-} */
->>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
 .active1{
     border-bottom: 1.5px solid #EA2027;
 }
-.toggle {
+.bike-name{
+    font-weight: bold
+}
+.image img{
+    cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+ .toggle {
 	 margin: 0 0 1.5rem;
 	 box-sizing: border-box;
 	 font-size: 0;
@@ -191,13 +131,13 @@ font-family: 'Montserrat', sans-serif;
 	 align-items: stretch;
      outline: none;
 }
-.toggle input {
+ .toggle input {
 	 width: 0;
 	 height: 0;
 	 position: absolute;
 	 left: -9999px;
 }
-.toggle input + label {
+ .toggle input + label {
 	 margin: 0;
 	 /* padding: 0.75rem 2rem; */
        padding: 0.15rem 0.5rem;
@@ -221,18 +161,18 @@ font-family: 'Montserrat', sans-serif;
 	*/
 	/* ----- */
 }
-.toggle input + label:first-of-type {
+ .toggle input + label:first-of-type {
 	 border-radius: 6px 0 0 6px;
 	 border-right: none;
 }
-.toggle input + label:last-of-type {
+ .toggle input + label:last-of-type {
 	 border-radius: 0 6px 6px 0;
 	 border-left: none;
 }
-.toggle input:hover + label {
+ .toggle input:hover + label {
 	 border-color: #213140;
 }
-.toggle input:checked + label {
+ .toggle input:checked + label {
 	 background-color: #EA2027;
 	 color: #fff;
 	 box-shadow: 0 0 10px rgba(10, 10, 10, 0.5);
@@ -241,13 +181,6 @@ font-family: 'Montserrat', sans-serif;
 }
  .toggle input:focus + label {
 	 outline-offset: 0.45rem;
-}
-.bike-name{
-    font-weight: bold
-}
-.image img{
-    cursor: pointer;
-  transition: all 0.4s ease;
 }
 .mobile{
     display: none;
@@ -263,24 +196,10 @@ font-family: 'Montserrat', sans-serif;
     margin-right: 11px;
     padding-right: 0px;
     padding-bottom: 0px;
-    font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+
 }
-.topic p{
-    font-size: 18px;
-    font-weight:bold;
-      font-family: 'Montserrat', sans-serif;
-}
-.card-body{
-    padding: 6px
-}
-.card-body p{
-      font-size: 13px;
-      margin-top: 0px;
-      font-family: 'Montserrat', sans-serif;
-      line-height: 3PX;
-      padding:0px;
-}
-@media (max-width: 800px) {
+ @media (max-width: 800px) {
 	 .toggle input + label {
 		 /* padding: 0.75rem 0.25rem; */
          padding: 0.25rem 0.25rem;
@@ -298,10 +217,12 @@ font-family: 'Montserrat', sans-serif;
     }
     .breadcrumb li a{
         font-size: 13px;
+        color: #EA2027
     }
     .breadcrumb-item+.breadcrumb-item::before {
         font-size: 10px;
         padding:2px;
+        
     }
     .breadcrumb-item.active {
          padding-left: 1px;
@@ -310,7 +231,6 @@ font-family: 'Montserrat', sans-serif;
          padding-left: 1px;
          color: #EA2027
     }
-<<<<<<< HEAD
 }
 
 
@@ -337,49 +257,5 @@ font-family: 'Montserrat', sans-serif;
       line-height: 3PX;
       padding:0px;
 }
- /* for the cc selection */
- .sidenav {
-  width: 100%;
-  height: 0;
-  z-index: 1;
-  background-color: transparent;
-  overflow-y: hidden;
-  transition: 0.5s;
-}
-
-.sidenav a {
-  padding: 2px 2px 2px 2px;
-  text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.row a{
-display: inline;
-}
-
-#main {
-  transition: margin-bottom .5s;
-}
-.open{
-   height: 60px !important ;
-    box-shadow: none !important
-}
-button.btn.cc-display {
-  border: solid 1px #ddd;
-}
-button.btn.select{
-      border: solid 1px #ddd;
-      box-shadow: none !important
-}
-=======
-} 
->>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
+ 
 </style>

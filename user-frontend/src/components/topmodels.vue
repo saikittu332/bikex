@@ -8,9 +8,8 @@
             <li aria-current="page" class="ml-auto"><a href="/bikes" class="">SHOW ALL</a></li>
             </ol>
         </nav>
-
-    <div class="row">
-
+        
+        <div class="row">
             <div class="col-md-3">
             <div class="card mb-4 shadow-sm" style="cursor: pointer" @click="bike">
             <div class="image">
@@ -24,9 +23,6 @@
                     </div>
             </div>
         </div>
-    
-
-
     </div>
     </div>
 </div>  

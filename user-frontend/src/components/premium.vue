@@ -1,6 +1,6 @@
 <template>
 <div class="hello">
-  <div class="packages-container mt-4">
+<div class="packages-container mt-4">
     <div class="container col-sm-12">
         <nav aria-label="breadcrumb mt-4 mb-4">
             <ol class="breadcrumb">

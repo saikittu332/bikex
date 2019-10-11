@@ -4,6 +4,7 @@
     <div class="header text-center mt-4">
       <p>Discover your bike</p>
     </div>
+<<<<<<< HEAD
       <div class="row">
          <div class="col-md-4 col-4 p-1 m-0" @click="scooters">
             <div class="card"> 
@@ -35,31 +36,63 @@
                 <p class="bike-name">Sports</p>
               </div>
             </div>
+=======
+    <div class="row">
+      <div class="col-md-4 col-4 p-1 m-0" @click="bikes">
+        <div class="card"> 
+          <div class="image">
+            <img src="../assets/scooter.svg" width="70%" height="35%">
+          </div>
+          <div class="card-body p-2 m-0">
+            <p class="bike-name">Bikes</p>
+          </div>
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
         </div>
-     </div>
+      </div>
+      <div class="col-md-4 col-4 p-1 m-0" @click="scooters">
+        <div class="card"> 
+          <div class="image">
+            <img src="../assets/scooter.svg" width="70%" height="35%">
+          </div>
+          <div class="card-body p-2 m-0">
+            <p class="bike-name">Scooter</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-4 p-1 m-0" @click="sport">
+        <div class="card">
+          <div class="image">
+            <img src="../assets/scooter.svg" width="70%" height="30%">
+          </div>
+          <div class="card-body p-2 m-0">
+            <p class="bike-name">Sport Bikes</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="quotes col-12 col-md-12 mb-4 pt-4 pb-4">
     <carousel items=1 :nav="false" :autoplay="true">
-          <div class="col-12">
+      <div class="col-12">
+        "The website makes car-buying haggle-free,
+        with prices below market value, so customers can rest easy knowing they aren't getting ripped off."
+      </div>
+      <div class="col-12">
+        "The website makes car-buying haggle-free,
+        with prices below market value, so customers can rest easy knowing they aren't getting ripped off."
+      </div>
+      <div class="col-12">
             "The website makes car-buying haggle-free,
              with prices below market value, so customers can rest easy knowing they aren't getting ripped off."
-          </div>
-          <div class="col-12">
-            "The website makes car-buying haggle-free,
-             with prices below market value, so customers can rest easy knowing they aren't getting ripped off."
-          </div>
-          <div class="col-12">
-            "The website makes car-buying haggle-free,
-             with prices below market value, so customers can rest easy knowing they aren't getting ripped off."
-          </div>
-          <div class="col-12">
-            "The website makes car-buying haggle-free,
-             with prices below market value, so customers can rest easy knowing they aren't getting ripped off."
-          </div>
-          <div class="col-12">
-            "The website makes car-buying haggle-free,
-             with prices below market value, so customers can rest easy knowing they aren't getting ripped off."
-          </div>
+      </div>
+      <div class="col-12">
+        "The website makes car-buying haggle-free,
+         with prices below market value, so customers can rest easy knowing they aren't getting ripped off."
+      </div>
+      <div class="col-12">
+        "The website makes car-buying haggle-free,
+         with prices below market value, so customers can rest easy knowing they aren't getting ripped off."
+      </div>
     </carousel>
   </div>
 
@@ -154,7 +187,7 @@
   </div>
   <!-- <div class="values col-md-8 ml-0">
     <div class="menu pb-0 ml-0 pl-0 col-12">
-            <nav class="nav ml-0 pl-0">
+      <nav class="nav ml-0 pl-0">
                <ul class="ml-0 pl-0">
                  <li v-bind:class="{ active: prices }" @click="price">Prices</li>
                   <li v-bind:class="{ active: reconditioning }" @click="reconditions">Reconditioning</li>
@@ -256,7 +289,7 @@ components: {
       // }
       bikes: function(){this.$router.push({path:'/bikes'})},
       scooters: function(){this.$router.push({path:'/scooters'})},
-      racings: function(){this.$router.push({path:'/racing'})},
+      sport: function(){this.$router.push({path:'/sport'})},
       }
   }
 </script>
@@ -264,6 +297,7 @@ components: {
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
  @media only screen and (max-width: 500px) {
+<<<<<<< HEAD
     .card{
       border:none !important;
       background-color: #EA2027;
@@ -317,52 +351,68 @@ components: {
   font-family: 'Coda', cursive;
   font-weight: bold;
  }
- .trust-container{
-   background-color: #fff;
- }
- .quotes{
-     /* box-shadow: 0 0 10px rgba(10, 10, 10, 0.5); */
-  font-family: 'Montserrat', sans-serif;
-font-style: italic;
- }
-.active{
-     border-bottom: 2px solid #EA2027 !important;
-
- }
- .trust h2{
-   color: #EA2027; 
-   font-weight:bold;
-  font-family: 'Montserrat', sans-serif;
- }
- .trust{
-     font-family: 'Montserrat', sans-serif;
-     
-
- }
- ::-webkit-scrollbar { 
-    display: none; 
-}
- .menu{
-  overflow-x: scroll;
-  scrollbar-shadow-color: white;
- }
-.card{
-  background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 2px;
-    cursor: pointer;
+=======
+  .card{
+    border:none !important;
+    background-color: #EA2027;
+    font-family: 'Montserrat', sans-serif;
+  }
 }
 .header p{
-      font-size: 16px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold
-    }
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold
+}
+.card{
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 2px;
+  cursor: pointer;
+}
 .card:hover{
   box-shadow: 0 0 10px rgba(10, 10, 10, 0.5);
   cursor: pointer;
 }
-.demo{
-  border: 2px solid black;
+.quotes{
+  /* box-shadow: 0 0 10px rgba(10, 10, 10, 0.5); */
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
 }
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
+ .trust-container{
+   background-color: #fff;
+}
+.trust h2{
+  color: #EA2027; 
+  font-weight:bold;
+  font-family: 'Montserrat', sans-serif;
+}
+.trust{
+  font-family: 'Montserrat', sans-serif;
+}
+ .border{
+  border-right: 1px solid #EA2027
+}
+ .nav ul li{
+  display: inline;
+  padding:12px;
+  border-bottom: 1px solid gray;
+  font-family: 'Montserrat', sans-serif;
+ }
+ ::-webkit-scrollbar { 
+    display: none; 
+}
+/* .active{
+     border-bottom: 2px solid #EA2027 !important;
+
+ }
+.menu p{  
+   display: inline
+ }
+
+ .menu{
+  overflow-x: scroll;
+  scrollbar-shadow-color: white;
+ } */
 </style>
