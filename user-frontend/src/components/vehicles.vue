@@ -1,6 +1,6 @@
 <template>
     <div class="bikes">              
-        <div class="container col-md-12">  
+        <div class="container col-lg-12">  
             <nav aria-label="breadcrumb mb-0 pb-0">
                 <ol class="breadcrumb mb-0 pb-0">
                     <li aria-current="page" class="breadcrumb-item active">
@@ -37,9 +37,9 @@
         </div>  
         <!-- first container ends -->
          <!-- <div class="w-100 d-none d-xl-block"> -->
-        <div class="container bikes mb-4 py-2 col-lg-15">   
+        <div class="container bikes mb-4 py-2 col-lg-12">   
             <div class="row pl-2 pr-2">
-                <div class="col-4 col-lg-3 pt-2 pr-1 pl-1">
+                <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="motorbike" @click="display">
                         <div class="card">
                             <div class="image">
@@ -53,7 +53,7 @@
                     </div>
                 </div>
 
-                <div class="col-4 col-lg-3 pt-2 pr-1 pl-1">
+                <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
 
-                <div class="col-4 col-lg-3 pt-2 pr-1 pl-1">
+                <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -81,7 +81,7 @@
                     </div>
                 </div>
 
-                <div class="col-4 col-lg-3 pt-2 pr-1 pl-1">
+                <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                 </div>  
-                 <div class="col-4 col-lg-3 pt-2 pr-1 pl-1">
+                 <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                 </div>  
-                 <div class="col-4 col-lg-3 pt-2 pr-1 pl-1">
+                 <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                 </div>  
-                 <div class="col-4 col-lg-3 pt-2 pr-1 pl-1">
+                 <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                 </div>  
-                 <div class="col-4 col-lg-3 pt-2 pr-1 pl-1">
+                 <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -146,7 +146,7 @@
                         </div>
                     </div>
                 </div>  
-                 <div class="col-4 col-lg-3 pt-2 pr-1 pl-1">
+                 <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -159,7 +159,7 @@
                         </div>
                     </div>
                 </div>  
-                 <div class="col-4 col-lg-3 pt-2 pr-1 pl-1">
+                 <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -172,7 +172,7 @@
                         </div>
                     </div>
                 </div>  
-                 <div class="col-4 col-lg-3 pt-2 pr-1 pl-1">
+                 <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -185,7 +185,7 @@
                         </div>
                     </div>
                 </div>  
-                 <div class="col-4 col-lg-3 pt-2 pr-1 pl-1">
+                 <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -198,7 +198,7 @@
                         </div>
                     </div>
                 </div>  
-                 <div class="col-4 col-lg-3 pt-2 pr-1 pl-1">
+                 <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -235,6 +235,19 @@ export default {
 </script>
 
 <style scoped>
+/* .col-lg-2{
+    -ms-flex: 0 0 16.666667% !important;
+    flex: 0 0 19.966667% !important;
+} */
+@media (min-width: 992px){
+.col-lg-2 {
+    /* -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%; */
+     -ms-flex: 0 0 16.666667% ;
+    flex: 0 0 19.966667% ;
+}
+}
 a {
     color: #EA2027;
     text-decoration: none;

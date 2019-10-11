@@ -12,7 +12,7 @@
       </li>
     </ol>
   </nav>
- <div class="row">
+  <div class="row">
     <div class="col-md-6">
     <carousel perPage="1" :loop="true" paginationActiveColor="#EA2027">
     <slide>
@@ -66,7 +66,7 @@
  </div>
 
     <div class="col-12 specs mt-4 col-md-12">
-    <div class="row">
+      <div class="row">
         <div class="col-md-6">
           <div class="heading pr-0 pb-0">
             <nav class="nav pb-0 text-left">
@@ -86,88 +86,87 @@
 
         <div class="col-md-6">
           <div class="heading pr-0 pb-0">
-          <nav class="nav pb-0 text-left">
-            <div class="col-6 spec-head active">
-              <p class="nav-link">Details </p>
-            </div>     
-          </nav>
-        </div>
+            <nav class="nav pb-0 text-left">
+              <div class="col-6 spec-head active">
+                <p class="nav-link">Details </p>
+              </div>     
+            </nav>
+          </div>
 
-        <div class="col-12 features-content">
-          <ul class="text-left mt-4 pl-3">
-            <div class="row">
-              <div class="col-6 head">
-                <li>CC </li>
+          <div class="col-12 features-content">
+            <ul class="text-left mt-4 pl-3">
+              <div class="row">
+                <div class="col-6 head">
+                  <li>CC </li>
+                </div>
+                <div class="col-6 body">
+                  <li>150CC</li>
+                </div>
               </div>
-              <div class="col-6 body">
-                <li>150CC</li>
-              </div>
-            </div>
 
-            <div class="row">
+              <div class="row">
                 <div class="col-6 head">
                   <li>Mileage </li>
                 </div>
                 <div class="col-6 body">
                   <li>99.1</li>
                 </div>
-            </div>
-            <div class="row">
+              </div>
+              <div class="row">
                 <div class="col-6 head">
                   <li>Power </li>
                 </div>
                 <div class="col-6 body">
                   <li>8.1</li>
                 </div>
-            </div>
-             <div class="row">
+              </div>
+              <div class="row">
                 <div class="col-6 head">
                   <li>Fuel Capacity </li>
                 </div>
                 <div class="col-6 body">
                   <li>10.5</li>
                 </div>
-            </div>
-             <div class="row">
+              </div>
+              <div class="row">
                 <div class="col-6 head">
                   <li>Speed </li>
                 </div>
                 <div class="col-6 body">
                   <li>90</li>
                 </div>
-            </div>
-            <div class="row">
+              </div>
+              <div class="row">
                 <div class="col-6 head">
                   <li>Ignition </li>
                 </div>
                 <div class="col-6 body">
                   <li>Kick start</li>
                 </div>
-            </div>
+              </div>
           </ul>
         </div>
-        </div>
+      </div>
     </div>
 
-         <div class="heading pr-0 pb-0">
-            <nav class="nav pb-0 text-left">
-              <div class="col-6 spec-head active">
-                <p class="nav-link">Why us?</p>
-              </div>     
-            </nav>
-          </div>
-         <div class="col-12 features-content mt-4">
-          <p>
-            Our monthly bike rental vehicle range includes Bajaj CT 100 B at a very affordable rent. 
-            This bike for rent at bike rentals in Hyderabad and Bangalore comes with Bajaj ‘SNS’ suspension in the rear and a conventional suspension in the front. It comes with a fuel gauge and flexible side indicators. The two-wheeler for rent uses a 102 cc single-cylinder 4-stroke engine tuned to produce 7.6 bhp of power and 8.24 Nm of peak torque.
-             Take this self-drive bike effortlessly around your city and enjoy a hassle-free ride throughout.
-          </p>
-        </div>
-        <div class="submit mt-3 mb-4">
-              <button class="btn btn-primary buttons" type="submit">BOOK NOW</button>
-            </div>
-    
+    <div class="heading pr-0 pb-0">
+      <nav class="nav pb-0 text-left">
+        <div class="col-6 spec-head active">
+          <p class="nav-link">Why us?</p>
+        </div>     
+      </nav>
     </div>
+    <div class="col-12 features-content mt-4">
+      <p>
+        Our monthly bike rental vehicle range includes Bajaj CT 100 B at a very affordable rent. 
+        This bike for rent at bike rentals in Hyderabad and Bangalore comes with Bajaj ‘SNS’ suspension in the rear and a conventional suspension in the front. It comes with a fuel gauge and flexible side indicators. The two-wheeler for rent uses a 102 cc single-cylinder 4-stroke engine tuned to produce 7.6 bhp of power and 8.24 Nm of peak torque.
+        Take this self-drive bike effortlessly around your city and enjoy a hassle-free ride throughout.
+      </p>
+    </div>
+    <div class="submit mt-3 mb-4">
+      <button class="btn btn-primary buttons" type="submit">BOOK NOW</button>
+    </div>
+  </div>
 </div>
 </template>
 
@@ -182,7 +181,6 @@ a {
 background-color: transparent;
 padding:0 !important;
 font-family: 'Montserrat', sans-serif;
-
 }
 .active{
   border-bottom: 2px solid #EA2027;

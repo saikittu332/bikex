@@ -28,7 +28,7 @@
        <a class="models"><router-link to="/vehicles" exact-active-class="active">MODELS</router-link></a>
       </li>
       <li class="nav-item">
-       <a class="faq"><router-link to="/contact" exact-active-class="active">FAQ'S</router-link></a>
+       <a class="faq"><router-link to="/faq" exact-active-class="active">FAQ'S</router-link></a>
       </li>
 
 </ul>

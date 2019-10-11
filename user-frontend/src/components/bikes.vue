@@ -116,6 +116,14 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Scada&display=swap');
+#bikes {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
 a {
     color: #EA2027;
     text-decoration: none;
@@ -125,27 +133,17 @@ a {
 background-color: transparent;
 padding:0 !important;
 font-family: 'Montserrat', sans-serif;
-
 }
-.dropdown:hover > .dropdown-menu {
+/* .dropdown:hover > .dropdown-menu {
 	 display: block;
 }
  .dropdown > .dropdown-toggle:active {
-	/*Without this, clicking will make it sticky*/
 	 pointer-events: none;
-}
+} */
 .active1{
     border-bottom: 1.5px solid #EA2027;
 }
-.bike-name{
-    font-weight: bold
-}
-.image img{
-    cursor: pointer;
-  transition: all 0.4s ease;
-}
-
- .toggle {
+.toggle {
 	 margin: 0 0 1.5rem;
 	 box-sizing: border-box;
 	 font-size: 0;
@@ -155,13 +153,13 @@ font-family: 'Montserrat', sans-serif;
 	 align-items: stretch;
      outline: none;
 }
- .toggle input {
+.toggle input {
 	 width: 0;
 	 height: 0;
 	 position: absolute;
 	 left: -9999px;
 }
- .toggle input + label {
+.toggle input + label {
 	 margin: 0;
 	 /* padding: 0.75rem 2rem; */
        padding: 0.15rem 0.5rem;
@@ -185,18 +183,18 @@ font-family: 'Montserrat', sans-serif;
 	*/
 	/* ----- */
 }
- .toggle input + label:first-of-type {
+.toggle input + label:first-of-type {
 	 border-radius: 6px 0 0 6px;
 	 border-right: none;
 }
- .toggle input + label:last-of-type {
+.toggle input + label:last-of-type {
 	 border-radius: 0 6px 6px 0;
 	 border-left: none;
 }
- .toggle input:hover + label {
+.toggle input:hover + label {
 	 border-color: #213140;
 }
- .toggle input:checked + label {
+.toggle input:checked + label {
 	 background-color: #EA2027;
 	 color: #fff;
 	 box-shadow: 0 0 10px rgba(10, 10, 10, 0.5);
@@ -205,6 +203,13 @@ font-family: 'Montserrat', sans-serif;
 }
  .toggle input:focus + label {
 	 outline-offset: 0.45rem;
+}
+.bike-name{
+    font-weight: bold
+}
+.image img{
+    cursor: pointer;
+  transition: all 0.4s ease;
 }
 .mobile{
     display: none;
@@ -220,10 +225,24 @@ font-family: 'Montserrat', sans-serif;
     margin-right: 11px;
     padding-right: 0px;
     padding-bottom: 0px;
-        font-family: 'Montserrat', sans-serif;
-
+    font-family: 'Montserrat', sans-serif;
 }
- @media (max-width: 800px) {
+.topic p{
+    font-size: 18px;
+    font-weight:bold;
+      font-family: 'Montserrat', sans-serif;
+}
+.card-body{
+    padding: 6px
+}
+.card-body p{
+      font-size: 13px;
+      margin-top: 0px;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 3PX;
+      padding:0px;
+}
+@media (max-width: 800px) {
 	 .toggle input + label {
 		 /* padding: 0.75rem 0.25rem; */
          padding: 0.25rem 0.25rem;
@@ -253,31 +272,5 @@ font-family: 'Montserrat', sans-serif;
          padding-left: 1px;
          color: #EA2027
     }
-}
-
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Scada&display=swap');
-#bikes {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-.topic p{
-    font-size: 18px;
-    font-weight:bold;
-      font-family: 'Montserrat', sans-serif;
-}
-.card-body{
-    padding: 6px
-}
-.card-body p{
-      font-size: 13px;
-      margin-top: 0px;
-      font-family: 'Montserrat', sans-serif;
-      line-height: 3PX;
-      padding:0px;
-}
- 
+} 
 </style>
