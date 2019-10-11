@@ -12,9 +12,9 @@
                     </li>
                     <li aria-current="page" class="ml-auto">
                         <div class="toggle">
-                            <input type="radio" name="sizeBy" value="standard" id="standard" onclick="" checked="checked" />
+                            <input type="radio" name="sizeBy" value="standard" id="standard" checked="checked" />
                             <label for="standard" >Standard</label>
-                            <input type="radio" name="sizeBy" value="premium" id="premium" onclick="" />
+                            <input type="radio" name="sizeBy" value="premium" id="premium" />
                             <label for="premium" >Premium</label>
                         </div>
                     </li>
@@ -111,6 +111,8 @@ export default {
     // },
     methods:{
          display: function(){this.$router.push({path:'/display'})},
+         standard: function(){this.$router.push({path:'/standard'})},
+         premium: function(){this.$router.push({path:'/premium'})},
     }
 }
 </script>
