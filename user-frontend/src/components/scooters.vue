@@ -12,7 +12,7 @@
                     </li>
                     <li aria-current="page" class="ml-auto">
                         <div class="toggle">
-                            <input type="radio" name="sizeBy" value="standard" id="standard" onclick="" checked="checked" />
+                            <input type="radio" name="sizeBy" value="standard" id="standard" @click="sstndard" checked="checked" />
                             <label for="standard" >Standard</label>
                             <input type="radio" name="sizeBy" value="premium" id="premium" onclick="" />
                             <label for="premium" >Premium</label>

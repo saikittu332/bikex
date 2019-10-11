@@ -5,33 +5,34 @@
       <p>Discover your bike</p>
     </div>
       <div class="row">
+         <div class="col-md-4 col-4 p-1 m-0" @click="scooters">
+            <div class="card"> 
+              <div class="image">
+                <img src="../assets/commuter.svg" width="70%" height="35%">
+              </div>
+              <div class="card-body p-2 m-0">
+                <p class="bike-name">Commuters</p>
+              </div>
+            </div>
+       </div>
        <div class="col-md-4 col-4 p-1 m-0" @click="bikes">
             <div class="card"> 
               <div class="image">
-                <img src="../assets/scooter.svg" width="70%" height="35%">
+                <img src="../assets/Traveller.svg" width="70%" height="35%">
               </div>
               <div class="card-body p-2 m-0">
                 <p class="bike-name">Bikes</p>
               </div>
             </div>
        </div>
-        <div class="col-md-4 col-4 p-1 m-0" @click="scooters">
-            <div class="card"> 
-              <div class="image">
-                <img src="../assets/scooter.svg" width="70%" height="35%">
-              </div>
-              <div class="card-body p-2 m-0">
-                <p class="bike-name">Scooter</p>
-              </div>
-            </div>
-       </div>
+  
         <div class="col-md-4 col-4 p-1 m-0" @click="racings">
             <div class="card">
               <div class="image">
-                <img src="../assets/scooter.svg" width="70%" height="30%">
+                <img src="../assets/Sports.svg" width="70%" height="30%">
               </div>
               <div class="card-body p-2 m-0">
-                <p class="bike-name">Racing</p>
+                <p class="bike-name">Sports</p>
               </div>
             </div>
         </div>
@@ -107,7 +108,7 @@
           </div>
       </div>
 
-        <div class="col-6 m-0 p-0 col-md-2 text-left mt-4 mobile">
+        <div class="col-6 m-0 p-0 col-md-2 text-left mt-4 mobile pl-2">
           <div class="image m-0">
               <img src="../assets/value1.jpg" alt="" height="auto" width="90%">
           </div>
@@ -275,6 +276,7 @@ components: {
       display:block !important;
     }
  }
+
  .menu p{
    display: inline
  }

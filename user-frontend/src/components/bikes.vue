@@ -28,14 +28,30 @@
             </nav>
             
             <div class="form-group mobile">
-                <label for="sel1">Select CC:</label>
+                <!-- <label for="sel1">Select CC:</label>
                 <select class="form-control" id="sel1">
                     <option>100CC - 150CC</option>
                     <option>150CC - 200CC</option>
                     <option>200-CC - 250CC</option>
-                </select>
-            </div>
-        </div>  
+                </select> -->
+                <div id="main" class="">
+                    <button class="btn select" @click="cc= !cc">Select CC</button>
+                    <div id="mySidenav" class="sidenav" v-bind:class="{ open: cc }">
+                                    <div class="row mt-3 mb-2">
+                                        <div class="col-4">
+                                            <button class="btn cc-display">100-150</button>
+                                        </div>
+                                         <div class="col-4">
+                                            <button class="btn cc-display">150-200</button>
+                                        </div>
+                                         <div class="col-4">
+                                            <button class="btn cc-display">200-250</button>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>  
         <!-- first container ends -->
 
         <div class="container bikes mb-4 py-2 col-lg-12">   
@@ -97,18 +113,16 @@
         <!-- second container ends here -->
     </div>
 </template>
-<script></script>
+<script>
 export default {
-    data{
+    data(){
         return{
-            images:[
-                {
-                    image:'',
-
-                }
-            ]
+            cc: false
         }
-    }
+    },
+   methods:{
+
+   }
 }
 </script>
 
@@ -125,6 +139,9 @@ font-family: 'Montserrat', sans-serif;
  .dropdown > .dropdown-toggle:active {
 	/*Without this, clicking will make it sticky*/
 	 pointer-events: none;
+}
+ ::-webkit-scrollbar { 
+    display: none; 
 }
 .active1{
     border-bottom: 1.5px solid #EA2027;
@@ -271,5 +288,46 @@ font-family: 'Montserrat', sans-serif;
       line-height: 3PX;
       padding:0px;
 }
- 
+ /* for the cc selection */
+ .sidenav {
+  width: 100%;
+  height: 0;
+  z-index: 1;
+  background-color: transparent;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 2px 2px 2px 2px;
+  text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.row a{
+display: inline;
+}
+
+#main {
+  transition: margin-bottom .5s;
+}
+.open{
+   height: 60px !important ;
+    box-shadow: none !important
+}
+button.btn.cc-display {
+  border: solid 1px #ddd;
+}
+button.btn.select{
+      border: solid 1px #ddd;
+      box-shadow: none !important
+}
 </style>
