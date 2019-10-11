@@ -39,8 +39,13 @@
          <!-- <div class="w-100 d-none d-xl-block"> -->
         <div class="container bikes mb-4 py-2 col-lg-12">   
             <div class="row pl-2 pr-2">
+<<<<<<< HEAD
+                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
+                    <div class="motorbike">
+=======
                 <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
                     <div class="motorbike" @click="display">
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                         <div class="card">
                             <div class="image">
                                 <img src="../assets/bikes/03-suzuki-access-125.png" width="100%" height="55%">
@@ -53,7 +58,11 @@
                     </div>
                 </div>
 
+<<<<<<< HEAD
+                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
+=======
                 <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -67,7 +76,11 @@
                     </div>
                 </div>
 
+<<<<<<< HEAD
+                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
+=======
                 <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -81,7 +94,11 @@
                     </div>
                 </div>
 
+<<<<<<< HEAD
+                <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
+=======
                 <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -94,7 +111,11 @@
                         </div>
                     </div>
                 </div>  
+<<<<<<< HEAD
+                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
+=======
                  <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -107,7 +128,11 @@
                         </div>
                     </div>
                 </div>  
+<<<<<<< HEAD
+                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
+=======
                  <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -120,7 +145,11 @@
                         </div>
                     </div>
                 </div>  
+<<<<<<< HEAD
+                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
+=======
                  <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -133,7 +162,11 @@
                         </div>
                     </div>
                 </div>  
+<<<<<<< HEAD
+                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
+=======
                  <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -146,7 +179,11 @@
                         </div>
                     </div>
                 </div>  
+<<<<<<< HEAD
+                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
+=======
                  <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -159,7 +196,11 @@
                         </div>
                     </div>
                 </div>  
+<<<<<<< HEAD
+                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
+=======
                  <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -172,7 +213,11 @@
                         </div>
                     </div>
                 </div>  
+<<<<<<< HEAD
+                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
+=======
                  <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -185,7 +230,11 @@
                         </div>
                     </div>
                 </div>  
+<<<<<<< HEAD
+                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
+=======
                  <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">
@@ -198,7 +247,11 @@
                         </div>
                     </div>
                 </div>  
+<<<<<<< HEAD
+                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
+=======
                  <div class="col-4 col-lg-2 pt-2 pr-1 pl-1">
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                     <div class="moterbike">
                         <div class="card"> 
                             <div class="image">

@@ -28,20 +28,40 @@
             </nav>
             
             <div class="form-group mobile">
-                <label for="sel1">Select CC:</label>
+                <!-- <label for="sel1">Select CC:</label>
                 <select class="form-control" id="sel1">
                     <option>100CC - 150CC</option>
                     <option>150CC - 200CC</option>
                     <option>200-CC - 250CC</option>
-                </select>
-            </div>
-        </div>  
+                </select> -->
+                <div id="main" class="">
+                    <button class="btn select" @click="cc= !cc">Select CC</button>
+                    <div id="mySidenav" class="sidenav" v-bind:class="{ open: cc }">
+                                    <div class="row mt-3 mb-2">
+                                        <div class="col-4">
+                                            <button class="btn cc-display">100-150</button>
+                                        </div>
+                                         <div class="col-4">
+                                            <button class="btn cc-display">150-200</button>
+                                        </div>
+                                         <div class="col-4">
+                                            <button class="btn cc-display">200-250</button>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>  
         <!-- first container ends -->
 
         <div class="container bikes mb-4 py-2 col-lg-12">   
             <div class="row pl-2 pr-2">
                 <div class="col-4 col-md-4 col-lg-2 pt-2 pr-1 pl-1">
+<<<<<<< HEAD
+                    <div class="moterbike">
+=======
                     <div class="moterbike" @click="display">
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                         <div class="card"> 
                             <div class="image">
                                 <img src="../assets/bikes/10-bajaj-pulsar-150.png" width="100%" height="55%">
@@ -99,6 +119,16 @@
 </template>
 <script>
 export default {
+<<<<<<< HEAD
+    data(){
+        return{
+            cc: false
+        }
+    },
+   methods:{
+
+   }
+=======
     // data{
     //     return{
     //         images:[
@@ -114,6 +144,7 @@ export default {
          standard: function(){this.$router.push({path:'/standard'})},
          premium: function(){this.$router.push({path:'/premium'})},
     }
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
 }
 </script>
 
@@ -141,7 +172,14 @@ font-family: 'Montserrat', sans-serif;
 }
  .dropdown > .dropdown-toggle:active {
 	 pointer-events: none;
+<<<<<<< HEAD
+}
+ ::-webkit-scrollbar { 
+    display: none; 
+}
+=======
 } */
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
 .active1{
     border-bottom: 1.5px solid #EA2027;
 }
@@ -274,5 +312,76 @@ font-family: 'Montserrat', sans-serif;
          padding-left: 1px;
          color: #EA2027
     }
+<<<<<<< HEAD
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Scada&display=swap');
+#bikes {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+.topic p{
+    font-size: 18px;
+    font-weight:bold;
+      font-family: 'Montserrat', sans-serif;
+}
+.card-body{
+    padding: 6px
+}
+.card-body p{
+      font-size: 13px;
+      margin-top: 0px;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 3PX;
+      padding:0px;
+}
+ /* for the cc selection */
+ .sidenav {
+  width: 100%;
+  height: 0;
+  z-index: 1;
+  background-color: transparent;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 2px 2px 2px 2px;
+  text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.row a{
+display: inline;
+}
+
+#main {
+  transition: margin-bottom .5s;
+}
+.open{
+   height: 60px !important ;
+    box-shadow: none !important
+}
+button.btn.cc-display {
+  border: solid 1px #ddd;
+}
+button.btn.select{
+      border: solid 1px #ddd;
+      box-shadow: none !important
+}
+=======
 } 
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
 </style>

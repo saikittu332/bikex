@@ -6,13 +6,17 @@
                     <li aria-current="page" class="breadcrumb-item active">
                         <ol class="breadcrumb mb-0 pb-0">
                             <li class="breadcrumb-item notactive"><a href="/">Home</a></li>
+<<<<<<< HEAD
+                            <li class="breadcrumb-item active"><a @click="vehicles" style="curser:pointer">Vehicles</a></li>
+=======
                             <li class="breadcrumb-item active"><router-link to="/vehicles">Vehicles</router-link></li>
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
                             <li class="breadcrumb-item active"><a>Scooters</a></li>
                         </ol>
                     </li>
                     <li aria-current="page" class="ml-auto">
                         <div class="toggle">
-                            <input type="radio" name="sizeBy" value="standard" id="standard" onclick="" checked="checked" />
+                            <input type="radio" name="sizeBy" value="standard" id="standard" @click="sstndard" checked="checked" />
                             <label for="standard" >Standard</label>
                             <input type="radio" name="sizeBy" value="premium" id="premium" onclick="" />
                             <label for="premium" >Premium</label>
@@ -179,9 +183,16 @@
 </template>
 <script>
 export default {
+<<<<<<< HEAD
+    
+  methods:{
+            vehicles: function(){this.$router.push({path:'/vehicles'})},
+  }
+=======
     methods:{
          display: function(){this.$router.push({path:'/display'})},
     }
+>>>>>>> 34b07efff7bde94b4ea8fec90239889c1d79ef46
 }
 </script>
 
